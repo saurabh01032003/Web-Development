@@ -1,17 +1,18 @@
 /* Adjacent Siblings */
 
 /* All adjecent siblings of h1(top to bottom and left to right -> So' only one adjecent sibling will be selected */
-h1 + p{ 
+/* h1 + p{ 
     color: red;
-    /* font-size: 50px; */
-    /* background-color: aqua; */
-}
-
-/* General Siblings (Righside of tree ke sare p tag or div tag*/
-h1~p,h1~div{
-    border: 2px solid black;
+    font-size: 30px;
     background-color: aqua;
+} */
+
+
+/* ---------------------------------- */
+/* General Siblings (Righside of tree ke sare p tag or div tag*/
+h1~div{
+    font-size: 40px;
+    border: 2px solid black;
+    background-color: green;
 }
 
-/* pseudoclasses */
-/* Types of pseudoclasses-> 1) :hover   2) :active */
