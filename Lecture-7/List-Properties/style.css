@@ -1,0 +1,25 @@
+li{
+ border: 2px solid black;
+
+ /* list-style-position: inside;
+ list-style-position: outside; */
+ list-style-position: none;
+
+ /* dot-of list andar bahar */
+
+ list-style-type: circle;
+ list-style-type: none;
+}
+
+div{
+    /* border-width: 5px;
+    border-style: dotted;
+    border-color: green; */
+
+    /* Same kaam karega */
+    border: 2px solid red;
+
+    /* Border ki shadow ke liye (same as previous)*/
+    box-shadow: 3px 2px 1px green;
+    
+}

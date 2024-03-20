@@ -1,0 +1,34 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    transition-duration: 3s;
+    margin: 100px auto;
+}
+
+div:hover{
+
+    /* Two properties don't applied simultaneously -> Override */
+    /* transform: translateX(100px);*/
+    /* transform: translateY(100px);  */
+
+    /* both directionme */
+
+    /* transform: translate(100px, 100px); */
+
+    /* transform: rotateX(60deg);
+    transform: rotateY(90deg);
+    transform: rotateZ(90deg); */
+
+    /* enlarge-x */
+    /* transform: scaleX(2);  */
+
+    /* enlarge-y */
+    /* transform: scaleY(1.2); */
+
+
+    /* skew */
+    /* transform: skewY(30deg); */
+    transform: skewX(30deg);
+}

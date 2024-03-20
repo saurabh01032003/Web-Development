@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90vw;
+    height: 90vh;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: grid;
+
+    /* 2 colums are fixed : with 200px and 300px */
+    /* grid-template-columns: 100px 300px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5,1fr);
+
+    /* 3 rows are with dimention 100px, 150 px & 200px */
+    grid-template-rows: 100px 150px 200px; 
+
+    /* auto : remaining rows are given dimention with 50px  */
+    grid-auto-rows: 50px;
+
+    /* grid-auto-flow: column; */
+    grid-auto-flow: row;
+    grid-auto-columns: 50px;
+}
+
+.child{
+    background-color: aqua;
+    border: 2px solid black;
+}
+#item-2{
+
+    /* 1st way */
+    /* grid-column-start: 2;
+    grid-column-end: 5; */
+
+    /* 2nd way */
+    /* grid-column: 2/4; */
+
+    /* 3rd way */
+    grid-column: 2/span 2;
+    background-color: red;
+}
+
+#item-5{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: green;
+}

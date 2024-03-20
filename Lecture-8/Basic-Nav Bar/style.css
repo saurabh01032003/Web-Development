@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /* height: 100px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+}
+
+div{
+    color: white;
+    margin: 2px;
+}
+
+div:nth-of-type(2)
+{
+    width: 40vw;
+}
+
+button{
+    font-size: 20px;
+    color: black;
+}
+
+div:nth-of-type(2) > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* dot hat do(lists ke) */
+    list-style: none; 
+}
+
+
+@media screen and (max-width:767px)
+{
+    nav,div:nth-of-type(2) > ul{
+        flex-direction: column;
+    }
+    div:nth-of-type(2)>ul{
+        align-items: center;
+    }
+
+}

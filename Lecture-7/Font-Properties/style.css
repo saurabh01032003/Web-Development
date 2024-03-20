@@ -1,0 +1,29 @@
+h1 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 900;
+    /* Gap between two lines */
+    /* line-height: 10;  */
+
+    /* space between each latters */
+    /* letter-spacing: 1.2rem; */
+
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+/* .open {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+p {
+    font-size: 70px;
+    /* Four offsets : x(right Side ->)  y(bottom side)  blur-radius color-ofShadow */
+    /* text-shadow: 5px 1px 1px red; */
+    text-shadow: 4px 1px 1px red,
+        8px 2px 1px green,
+        12px 2px 1px orange;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border-top: 10px solid rgb(184, 22, 22);
+    border-left: 10px solid green;
+    border-bottom: 10px solid yellow;
+    border-right: 10px solid orange;
+    
+    border-radius: 50%;
+}
+
+div:hover{
+    animation-name: loader;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loader{
+    100%{
+        transform:rotate(360deg);
+    }
+}

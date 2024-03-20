@@ -1,0 +1,17 @@
+/* id > class > element -> Specificity */
+/* Specifity is checked first than flow of program */
+
+
+/* For specifity check refer website : "https://specificity.keegan.st"*/
+
+/* h1{
+    color: red;
+} */
+
+/* .hello{
+    color: purple;
+} */
+
+/* #hi{
+    color: green;
+} */

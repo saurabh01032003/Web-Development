@@ -1,0 +1,23 @@
+p::first-letter{
+    font-size: 100px;
+    color: orchid;
+}
+
+
+/* First line of view-port chahe jitni size ki ho */
+p::first-line{
+    /* Boldness badhta hai font-weight se (i.e it ranges from 100 and ends at 900) */
+    font-weight: 900;
+}
+
+h1::after{
+    content: ' love';
+
+    /* Unicode started with backward slace-> to add emoji after h1 tag */
+    content: '\1F970';
+}
+
+h1::before{
+    content: '\1F60D';
+    /* content: 'what '; */
+}

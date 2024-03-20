@@ -1,0 +1,66 @@
+/* till max-width of screen is 576px media-query property holds good */
+
+/* Hum jada width top of code rakhenge warna override hoke nahi chalega */
+/* Always apply for(max-width) as height of code is not fixed */
+
+/* @media screen and (max-width:1200px) {
+    h1 {
+        color: aqua;
+    }
+    div{
+        background-color: rgb(132, 19, 38);
+    }
+}
+
+@media screen and (max-width:991px) {
+    h1 {
+        color: green;
+    }
+    div{
+        background-color: rgb(93, 19, 132);
+    }
+}
+
+@media screen and (max-width:756px) {
+    h1 {
+        color: orange;
+    }
+    div{
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:576px) {
+    div {
+        background-color: red;
+    }
+} */
+/* @media screen,print{
+
+} */
+
+/* landscape : width badi */
+/* portrait: height badi */
+/* @media screen and (orientation: landscape) { */
+/* @media all and (orientation: landscape) { */
+    /* landscape mode(width > height) tabhi ye property chalegi */
+    /* h1 {
+        font-size: 200px;
+        background-color: green;
+    }
+} */
+
+/* @media all and (orientation: landscape),(max-width:500px) {
+    h1 {
+        background-color: green;
+        font-family: 'Courier New', Courier, monospace;
+    }
+} */
+
+@media all and (min-width:1200px) {
+    /* 1200 se km me css kaam nahi karega */
+    h1 {
+        background-color: green;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

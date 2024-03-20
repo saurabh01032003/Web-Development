@@ -1,0 +1,34 @@
+/* 1. % */
+
+/* section{
+    width: 500px;
+}
+
+div{
+    width: 100%;
+    border: 2px solid black;
+    background-color: green;
+} */
+
+/*----------------------------- */
+/* 2. em */
+
+/* snow-ball effect : when we go dipper inside inherited child font becomes increasing(2em or 3em), this effect is called snow-ball effect */
+/* ul>li{
+    font-size:2em;
+} */
+
+/* ------------------------------------------------ */
+
+/* 3. rem (Root ke respect me -> No snow-ball effect) */
+ul>li{
+    font-size: 2rem;
+}
+
+
+/* 4. vh (height of viewport) */
+div{
+    height: 70vh;
+    width: 70vw;
+    background-color: green;
+}

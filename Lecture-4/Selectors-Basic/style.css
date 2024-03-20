@@ -1,0 +1,58 @@
+/* 1. Element/Tag Selector */
+/* h1{
+    color: red;
+}
+
+p{
+    background-color: yellow;
+} */
+
+/* ----------------------------------------------------------------------- */
+
+/* 2. Class(multiple elements ke liye same hota hai) Selectors */
+/* .singh{
+    background-color: green;
+}
+
+.sam{
+    color: yellow;
+} */
+
+/* ------------------------------------------------------------------------ */
+
+/* 3. Id(is always unique) Selector
+#himanshu{
+    background-color: aqua;
+} */
+
+
+/* ------------------------------------------------------------------------ */
+/* 4 . Attribute Selector []
+
+input[type="text"]
+{
+    background-color: aqua;
+}
+
+input[type="password"]
+{
+    background-color: blue;
+}
+
+a[href="https://facebook.com"]{
+    font-size: 30px;
+    background-color: green;
+}
+
+a[href="https://flipkart.com"]
+{
+    font-size: 50px;
+    color: red;
+} */
+
+/* ------------------------------ */
+/* 5. Universal Selectors */
+*{
+    color: red;
+    border: 4px solid black;
+}

@@ -1,0 +1,46 @@
+
+/* Box model properties only hold for block elements(i.e div.. etc) not for inline elements */
+
+
+
+/* All browsers provide an extra margin and padding, so remove it */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div{
+    width: 100px;
+    height: 100px; */
+    /* border: 2px solid red; */
+
+    /* default of box-sizing is "content-box" agar iske upar hum border and padding add karenge to viewport ke bahar bhi ja sakta hai */
+    /* So' make it border-box */
+    /* box-sizing: border-box; */
+    /* width: 100%; */
+    /* border: 2px solid black;
+    padding: 10px;
+} */
+
+
+span{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    /* margin: 10px; */
+    /* Clock-wise: margin(top->right->bottom->left)->Same goes for padding as well */
+    margin: 10px 20px 60px 50px; 
+
+    /* top-bottom(1st wala) && left-right(2nd wala) */
+    margin: 10px 20px; 
+
+    /* 3 hue to 1st and 3rd top-bottom and 2nd will be for left and right */
+    margin: 10px 20px 30px;
+
+
+
+    /* Inline element pe box model ki property bhi chalegi and it will remain inline ->So' make display: inline-block */
+    /* display: block; */
+    display: inline-block;
+}

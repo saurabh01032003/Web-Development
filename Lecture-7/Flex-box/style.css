@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 100px; 
+    width: 100px;
+}
+
+section{
+    height: 700px;
+    border: 2px solid red;
+    display: flex;
+
+        /* Justify-content work in flex-direction */
+    /* flex-direction : row default */
+    /* justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    justify-content: space-between; */
+
+    /* flex-direction:column;
+    justify-content: center; */
+
+    /* below property will move content perpendicular to flex direction */
+    /* align-items: center;  */
+    /* align-items: stretch; default(if div ki size fixed nahi kari hoti toh stretched ho gaya hota)*/
+
+
+    /* justify-content: space-evenly; */
+    /* flex-wrap: nowrap(default)->Responsive(shrink karne pe niche move ho raha) */
+    /* flex-wrap: wrap; */
+
+    /* align-content */
+
+}
