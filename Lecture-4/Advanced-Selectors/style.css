@@ -51,8 +51,3 @@ section > article{
 } */
 
 
-/* ------------------------------------------------------------------------- */
-/* Adjacent Siblings */
-div + article{
-    background-color: red;
-}
