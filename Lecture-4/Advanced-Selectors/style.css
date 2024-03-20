@@ -1,45 +1,58 @@
 /* 1. descendant */
+
+/* section ka descendent div && div ka descendent article will be targeted (i.e article(2)) */
 /* section div article{
     background-color: yellow;
 } */
 
+/* div ka descendant article (article(2)) */
 /* div article{
     background-color: yellow;
 } */
 
-/* wrong */
+/* wrong (nav ke andar ke dono article select ho jayenge) */
 /* nav article{
     background-color: yellow;
 } */
 
-/* --------------------------- */
+
+/* ------------------------------------------------------------------------------------- */
 /* 2. child */ 
 
 /* div > h1 > strong{
     color: green;
 } */
 
-h1 > strong{
+/* h1 > strong{
     color: green;
-}
+} */
 
+/* article(1) selected (child of section -> 1 level down of section) */
 /* header >  nav > section >article{
     color: blue;
-} */
-/* nav > section >article{
+}
+
+nav > section >article{
+    color: blue;
+}
+
+section > article{
     color: blue;
 } */
 
-/* section > article{
-    color: blue;
-} */
-
-
+/* nav ka descendant article and article ka child div (i.e div1) */
 /* nav article > div{
     color: orange;
 } */
 
-
-header > div h1{
+/* header ka child div and div ka descendant h1 */
+/* header > div h1{
     background-color: yellow;
+} */
+
+
+/* ------------------------------------------------------------------------- */
+/* Adjacent Siblings */
+div + article{
+    background-color: red;
 }
