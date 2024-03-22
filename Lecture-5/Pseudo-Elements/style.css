@@ -8,8 +8,8 @@
 /* p::first-line{ */
     /* Boldness badhta hai font-weight se (i.e it ranges from 100 and ends at 900) */
     /* font-weight: 900;
-    background-color: red; */
-/* } */
+    color: red;
+} */
 
 h1::after{
     content: ' love';
@@ -17,11 +17,11 @@ h1::after{
     /* Unicode started with backward slace-> to add emoji after h1 tag */
     /* love text appear after h1 tag, is overridden by emoji with unicode "1F970" */
     content: '\1F970';
-}
+}  
 
-h1::before{
-    content: '\1F60D';
+/* h1::before{
+    content: '\1F60D'; */
 
     /* Content "what" will be overridden in place of emoji with unicode "1F60D" */
-    /* content: 'what '; */
-}
+    /* content: 'Knock Knock '; */
+/* } */
