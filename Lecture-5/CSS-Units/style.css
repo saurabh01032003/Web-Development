@@ -1,11 +1,12 @@
-/* 1. % */
+/* 1. % (With respect to parent) */
 
 /* section{
-    width: 500px;
-}
+    width: 300px;
+} */
 
-div{
-    width: 100%;
+/* div{ */
+    /* width is 100% with respect to section */
+    /* width: 100%;
     border: 2px solid black;
     background-color: green;
 } */
@@ -21,14 +22,14 @@ div{
 /* ------------------------------------------------ */
 
 /* 3. rem (Root ke respect me -> No snow-ball effect) */
-ul>li{
+/* ul>li{
     font-size: 2rem;
-}
+} */
 
 
 /* 4. vh (height of viewport) */
 div{
-    height: 70vh;
-    width: 70vw;
+    height: 50vh;
+    width: 50vw;
     background-color: green;
 }

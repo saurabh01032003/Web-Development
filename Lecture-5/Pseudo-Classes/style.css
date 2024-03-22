@@ -1,44 +1,56 @@
+/* 
 span{
-    background-color: red;
-}
+    background-color: yellow;
+} */
 
-span:hover{
-    font-size: 50px;
-    background-color: aqua;
-    border: 5px solid black;
-}
+/* 1. :hover */
+/* span:hover{
+    font-size: 40px;
+    background-color: green;
+    color: red;
+    border: 3px solid black;
+} */
 
 /* ----------------------------- */
-
-input{
+/* input{
     background-color: red;
-}
+} */
 
-/* focus : to switch focus from one input to another (You can switch your focus on pressing "tab") */
-input:focus{
+/* 2. focus : to switch focus from one input to another (You can switch your focus on pressing "tab") */
+/* input:focus{
     background-color: greenyellow;
-}
+}  */
 
 /* -------------------------------------------- */
-/* active: Jb tk press kare rahoge button ko tab tk property show hogi */
-button:active{
-    background-color: pink;
+/* 3. active: Jb tk press kare rahoge button ko tab tk property show hogi */
+
+/* button{
+    font-size: 10px;
+    background-color: yellow;
 }
+
+button:active{
+    background-color: green;
+    font-size: 15px;
+} */
 
 
 /* -------------------------------------- */
-/* visited: property change if a website is already visited(i.e visit hone ke baad property change ho gayi hai) */
-a:visited{
-    color: pink;
-}
-
-li:first-child{
+/* 4. visited: property change if a website is already visited(i.e visit hone ke baad property change ho gayi hai) */
+/* a:visited{
     color: red;
+} */
+
+/* ---------------------------------------------------------- */
+/* li:first-child{
+    color: red;
+    background-color: green;
 }
 
 li:last-child{
-    color: green;
-}
+    color: orange;
+    background-color: aqua;
+} */
 
 /* ----------------------------------------- */
 /* nth-of-type(4) -> li ka 4th sibling select hoga phir uske upar property laga do */
@@ -47,13 +59,13 @@ li:last-child{
 } */
 
 /* Sare odd place pe present li select ho jayenge */
-/* li:nth-of-type(even) 
+/* li:nth-of-type(odd) 
 {
     background-color: aqua;
 } */
 
 /* Similarlly you can do for even as well */
-/* li:nth-of-type(odd) 
+/* li:nth-of-type(even) 
 {
     background-color: pink;
 } */

@@ -3,15 +3,14 @@
 
 
 /* For specifity check refer website : "https://specificity.keegan.st"*/
-
-/* h1{
-    color: red;
-} */
-
-/* .hello{
-    color: purple;
-} */
-
-/* #hi{
+#hi{
     color: green;
-} */
+}
+
+.hello{
+    color: purple;
+}
+
+h1{
+    color: red;
+}

@@ -1,1 +1,7 @@
 /* Inheritance is of two types -> jo property inherit ho jayegi(font-size,color) 2.) Jo property inherit nahi hogi(i.e border) */
+ul{
+    color: aqua;
+    font-size: 40px;
+    /* border-bottom: 2px solid black; */
+    /* border: 2px solid black; */
+}
