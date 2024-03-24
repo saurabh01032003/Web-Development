@@ -2,9 +2,9 @@
 /* 1. rgb */
 h1{
     /* r[0..255], g[0....255], b[0....255] */
-    color: rgb(255, 120, 0);
+    /* color: rgb(255, 0, 0); */
     /* 'a' in rgba stands for -> alpha channel-> ranges from [0 to 1] -> screen me mix ho jayega if a = 0*/
-    color: rgba(200, 120, 0, 0.6);
+    /* color: rgba(200, 0, 0, 0.1); */
 
     /* 2. Hexadecimal-> starts with'#'-> first 2 digits after # are for red, next 2 for green and last two for blue-> each digit lies in [0...f]  */
 

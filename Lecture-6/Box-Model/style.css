@@ -1,8 +1,6 @@
 
 /* Box model properties only hold for block elements(i.e div.. etc) not for inline elements */
 
-
-
 /* All browsers provide an extra margin and padding, so remove it */
 *{
     margin: 0;
@@ -10,16 +8,18 @@
 }
 
 div{
-    /* width: 100px;
+    width: 100px;
     height: 100px;
-    border: 2px solid red; */
+    border: 2px solid red;
+    padding: 10px;
+    margin: 20px;
 
     /* default of box-sizing is "content-box" agar iske upar hum border and padding add karenge to viewport ke bahar bhi ja sakta hai */
     /* So' make it border-box */
-    box-sizing: content-box;
+    /* box-sizing: content-box;
     width: 100px;
     border: 2px solid black;
-    padding: 200px;
+    padding: 200px; */
 }
 
 
@@ -40,7 +40,22 @@ div{
 
 
 
-    /* Inline element pe box model ki property bhi chalegi and it will remain inline ->So' make display: inline-block */
+    /* Inline element pe box model ki property bhi chalegi and it will remain inline(thodi si jagah lega) ->So' make display: inline-block */
+
+    /* block: puri jagah lega */
     /* display: block; */
+
+    /* inline: thodi jagah lega */
+    /* display: inline; */
+
+    /* act as both inline and block i.e inline ki tarah thodi si jagah lega and block ke karan box-model properties lg jayenge */
     /* display: inline-block; */
+
+    /* none: element gayab ho jayega aur koi jagah nahi lega on viewport */
+    /* display: none; */
+
+    /* element nahi dikhega but jagah occupied hai */
+    /* visibility: hidden; */
+
+
 /* } */

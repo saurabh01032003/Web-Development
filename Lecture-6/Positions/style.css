@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 div {
     width: 100px;
     height: 100px;
@@ -5,30 +11,35 @@ div {
     display: inline-block;
 }
 
-#relative #middle {
+/* With respect to its origional position */
+/* #relative #middle {
     position: relative;
+    top: 100px;
+    left: 200px;
+} */
+
+/* With respect to first parent - move karega */
+/* #absolute #middle { */
+/* Remember attack on school and visualise one-note */
+/* position: absolute; */
     /* top: 100px;
-    left: 200px; */
-}
+    left: 100px; */
+    
+/* } */
 
-#absolute #middle {
-    /* Remember attack on school and visualise one-note */
-    position: absolute;
-    /* top: 100px; */
-}
 
-/* #fixed #middle{
-    position: fixed; */
-/* Body ke respect me fixed ho gaya hai */
-/* top: 100px;
-    left: 100px;
+/* With respect to body */
+/* #middle{
+    position: fixed;
+    Body ke respect me fixed ho gaya hai */
+    /* top: 100px;
 } */
 
 #sticky #middle {
-    /* Body se 200px niche fixed jaisa ho jayega, till parent has space */
-    /* Otherwise relative ki tarah kaam karega (scrool karke dekh le) */
+/* Body se 200px niche fixed jaisa ho jayega, till parent has space */
+/* Otherwise relative ki tarah kaam karega (scrool karke dekh le) */
     position: sticky;
-    top: 200px;
+    /* top: 0px; */
 }
 
 #sticky {
