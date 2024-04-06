@@ -11,37 +11,49 @@ div {
     display: inline-block;
 }
 
+#static #middle{
+    position: static;
+}
+
 /* With respect to its origional position */
 /* #relative #middle {
     position: relative;
     top: 100px;
-    left: 200px;
+    left: 100px;
 } */
 
-/* With respect to first parent - move karega */
+/* giving position to parent */
+/* #absolute{ */ 
+    /* section ko position de diye */
+    /* position: relative;
+    border: 2px solid black;
+} */
+
+/* With respect to recently positioned parent - move karega (here, with respect to section, else with respect to body) */
 /* #absolute #middle { */
 /* Remember attack on school and visualise one-note */
-/* position: absolute; */
-    /* top: 100px;
-    left: 100px; */
+    /* position: absolute; 
+    top: 100px;
+    left: 100px;
     
-/* } */
-
-
-/* With respect to body */
-/* #middle{
-    position: fixed;
-    Body ke respect me fixed ho gaya hai */
-    /* top: 100px;
 } */
+
+
+/* With respect to body, not dependent on parent */
+/* #fixed #middle{
+    position: fixed; */
+    /*Body ke respect me fixed ho gaya hai */
+    /* top: 100px; */
+/* } */
 
 #sticky #middle {
 /* Body se 200px niche fixed jaisa ho jayega, till parent has space */
 /* Otherwise relative ki tarah kaam karega (scrool karke dekh le) */
     position: sticky;
-    /* top: 0px; */
+    top: 200px;
 }
 
+/* For giving space to parent */
 #sticky {
     height: 500px;
     border: 2px solid black;

@@ -1,13 +1,12 @@
-
 /* Box model properties only hold for block elements(i.e div.. etc) not for inline elements */
 
 /* All browsers provide an extra margin and padding, so remove it */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-div{
+div {
     width: 100px;
     height: 100px;
     border: 2px solid red;
@@ -22,13 +21,17 @@ div{
     padding: 200px; */
 }
 
+p {
+    margin-bottom: 20px;
+}
 
-/* span{
+
+span {
     width: 100px;
     height: 100px;
     border: 2px solid black;
-    padding: 10px; */
-    /* margin: 10px; */
+    padding: 10px;
+    margin: 10px;
     /* Clock-wise: margin(top->right->bottom->left)->Same goes for padding as well */
     /* margin: 10px 20px 60px 50px;  */
 
@@ -49,7 +52,7 @@ div{
     /* display: inline; */
 
     /* act as both inline and block i.e inline ki tarah thodi si jagah lega and block ke karan box-model properties lg jayenge */
-    /* display: inline-block; */
+    display: inline-block;
 
     /* none: element gayab ho jayega aur koi jagah nahi lega on viewport */
     /* display: none; */
@@ -58,4 +61,4 @@ div{
     /* visibility: hidden; */
 
 
-/* } */
+}

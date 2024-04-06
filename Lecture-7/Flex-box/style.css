@@ -12,7 +12,7 @@ div{
 section{
     height: 700px;
     border: 2px solid red;
-    display: flex;
+    /* display: flex; */
 
         /* Justify-content work in flex-direction */
     /* flex-direction : row default */
@@ -37,5 +37,4 @@ section{
     /* flex-wrap: wrap; */
 
     /* align-content */
-
 }
