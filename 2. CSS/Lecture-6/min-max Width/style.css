@@ -1,0 +1,9 @@
+div{
+    background-color: greenyellow;
+
+    /* your content will take at most 700px of viewport */
+    max-width: 700px;
+
+    /* your content will be adjusted till 300px, usse kam hua to viewport ke bahar chala jayega */
+    min-width: 300px;
+}

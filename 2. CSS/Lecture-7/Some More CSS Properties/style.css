@@ -1,0 +1,14 @@
+p {
+    /* You want your whole content in one line(we do so, when the content is not much important-> User can scrool right to see them) */
+    /* tumhara content ek ke niche ek nahi aa raha : nowrap */
+    white-space: nowrap;
+
+    /*if your content is not more important than viewport ke baahar ka content will be hidden  */
+    overflow: hidden;
+
+    /* if you want to see the content outside viewport after scrolling */
+    /* overflow: scroll; */
+
+    /* for three dots at end of viewport to show there are further contents afterward */
+    /* text-overflow: ellipsis; */
+}
