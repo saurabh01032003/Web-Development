@@ -31,7 +31,7 @@
 // -----------------
 
 // sam();
-// console.log(a);
+// console.log(a); //Error(Cannot access 'a' before initialization) :  as a is initialised using let identifier
 
 // function sam() {
 //   console.log("hello there");
@@ -61,11 +61,14 @@ var a = 10;
 let b = 100;
 const c = 1000;
 
+// Options for above code
 // 1. 10 100 1000
 // 2. undef err err
 // 3. 10 undef undef
 // 4. undef undef undef
 // 5. none
+
+// Correct option is 'D' : ans is "undefined error" (as once the error occured ,you can't tell anything about below code)
 
 
 // --------------------------------------------------------------------------------------------------------------
@@ -83,3 +86,21 @@ const c = 1000;
 // var a = 10;
 // let b = 100;
 // const c = 1000;
+
+
+// ---------------------------------
+// carName = "Volvo";
+// let carName;
+
+// -----------------------------------
+// // x = 5
+// console.log(x);
+// var x = 5;
+
+
+// ----------------------------------
+// sum();
+
+// function sum(){
+//     console.log(5+2);
+// }

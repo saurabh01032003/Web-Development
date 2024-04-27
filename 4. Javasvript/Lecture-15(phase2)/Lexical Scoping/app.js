@@ -5,8 +5,8 @@
 // var a = 10;
 // function sam()
 // {
-//     console.log(a);
-//     var a = 100;
+//   console.log(a);
+//   var a = 100;
 // }
 // sam();
 
@@ -47,15 +47,15 @@
 
 // ----------------
 
-var a = 10;
-let b = 1000;
+// var a = 10;
+// let b = 1000;
 
-function sam() {
-  var c = 100;
-  let d = 200;
-}
+// function sam() {
+//   var c = 100;
+//   let d = 200;
+// }
 
-sam();
+// sam();
 
 // ---------------
 

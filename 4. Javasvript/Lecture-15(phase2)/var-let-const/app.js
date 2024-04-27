@@ -1,3 +1,4 @@
+// let => resassign ✅ & redeclare ❌
 // let abc = 20;
 // console.log(abc);
 // abc = "samarth";
@@ -17,11 +18,11 @@
 // a = true;
 // console.log(a);
 
-// ----
+// // ----
 
 // var a = 10;
+// console.log(a);
 // var a = 200;
-
 // console.log(a);
 
 // --------------------
@@ -35,7 +36,7 @@
 // a = 100;
 // console.log(a);
 
-// ------
+// // ------
 // const a = 20;
 // const a = true;
 
@@ -43,4 +44,4 @@
 // const sam;
 // sam = 100;
 
-const sam = 10;
+// const sam = 10;
