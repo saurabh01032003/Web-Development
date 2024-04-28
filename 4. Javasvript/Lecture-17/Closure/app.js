@@ -5,6 +5,7 @@
 //     function inner(){
 //         console.log("Main hu Saurabh");
 //         console.log(a);
+//         console.log(b);
 //     }
 //     return inner;
 // }
@@ -31,32 +32,32 @@
 
 // // Use of closure : For privatisation of methods
 
-// function counter() {
-//     let count = 0;
-//     return {
-//         increment: function () {
-//             count++;
-//         },
-//         decrement: function () {
-//             count--;
-//         },
-//         getCount: function () {
-//             console.log(count);
-//         },
-//         reset: function () {
-//             count = 0;
-//         },
-//     };
-// }
+function counter() {
+    let count = 0;
+    return {
+        increment: function () {
+            count++;
+        },
+        decrement: function () {
+            count--;
+        },
+        getCount: function () {
+            console.log(count);
+        },
+        reset: function () {
+            count = 0;
+        },
+    };
+}
 
-// let out = counter();
-// console.log(out);
-// out.getCount();
+let out = counter();
+console.log(out);
+out.getCount();
 
-// out.increment();
-// out.getCount();
-// out.increment();
-// out.decrement();
-// out.getCount();
-// out.reset();
-// out.getCount();
+out.increment();
+out.getCount();
+out.increment();
+out.decrement();
+out.getCount();
+out.reset();
+out.getCount();
