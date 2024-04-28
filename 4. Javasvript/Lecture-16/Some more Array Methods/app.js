@@ -1,11 +1,11 @@
 // array methods
 // let arr = [10,20,30,40,50];
 
-// -------------------------------------------------------
+// // // -------------------------------------------------------
 
-// 1. forEach => accepts a call back function => 2 (item,index)
+// // // 1. forEach => accepts a call back function => 2 (item,index)
 
-// -> It does not return anything
+// // // -> It does not return anything
 // let ans = arr.forEach(function (item,index){
 //     console.log(item,index);
 // });
@@ -43,7 +43,7 @@
 // console.log(newFilteredArray);
 
 // --------------------------------------------------------------------------------------
-// 4. find() => arr.find()
+// 4. find() => arr.find() -> returns found element
 
 
 let arr = [10,20,30,40,50];
@@ -55,6 +55,8 @@ let foundElement = arr.find(function(item,index){
     if(item === 6){
         return item;
     }
+
+    // since' array me 6 nahi mila to yaha aaya and returned undefined;
     
 });
 console.log(foundElement);

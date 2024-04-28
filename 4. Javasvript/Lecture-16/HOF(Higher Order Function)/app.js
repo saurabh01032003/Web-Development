@@ -1,5 +1,3 @@
-// function can be passed as arguement 
-
 // 1. Functions which accepts some other function as an arguement -> a(are called higher order functions)
 
 // function a(x){ // x is -> function b
@@ -12,6 +10,7 @@
 // }
 
 // a(b); // fuction a is called
+
 
 // // 2. function which can return  the entire function as a returned value -> higher order function
 // function a(){
@@ -28,7 +27,6 @@
 // ret();
 
 
-// 2. func which can return the entire function as a returned value
 
 // ---------------------------
 
@@ -48,3 +46,5 @@ function b() {
 }
 
 a(b);
+
+
