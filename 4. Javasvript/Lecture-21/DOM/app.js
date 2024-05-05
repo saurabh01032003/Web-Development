@@ -44,6 +44,9 @@
 // --------------Applying CSS
 
 // let h1 = document.getElementsByTagName("h1");
+// console.log(h1);
+// console.log(h1[0]);
+// console.log(h1[1]);
 // h1[0].style.color = "red"; // h1 ek array of tags hai jisme tumne select kiye hai
 // h1[1].style.backgroundColor="green";
 
@@ -57,19 +60,21 @@
 
 // // --------------------------
 // let idd = document.getElementById("dom"); // ek hi element select hua hai , naki array so indexing not allowed
+// console.log(idd);
 // idd.style.backgroundColor = "yellow";
 
 
 
 // // -------------------
 
-// let classes = document.getElementsByClassName("divv")
-// // classes[0].style.backgroundColor="aqua";
+let classes = document.getElementsByClassName("divv")
+// classes[0].style.backgroundColor="aqua";
+// classes[1].style.backgroundColor="green";
 
-// // for(let item of classes){
-// //     item.style.fontSize = "40px";
-// //     item.style.color = "aqua";
-// // }
+// for(let item of classes){
+//     item.style.fontSize = "40px";
+//     item.style.color = "aqua";
+// }
 
 
 // for(let item of classes){
@@ -77,7 +82,7 @@
 //     item.style.cssText = `color: red;
 //     background-color:yellow; 
 //     font-size:50px;
-//     border : 2px solid black`
+//     border : 2px solid black`;
 // }
 
 
@@ -94,20 +99,20 @@
 
 // -----------query Selector ALL
 
-let h1 = document.querySelectorAll("h1");
-for(let item of h1){
-    item.style.color= "aqua";
-}
+// let h1 = document.querySelectorAll("h1");
+// for(let item of h1){
+//     item.style.color= "aqua";
+// }
 
-let classs = document.querySelectorAll(".divv");
-for(let item of classs){
-    item.style.backgroundColor= "yellow";
-}
+// let classs = document.querySelectorAll(".divv");
+// for(let item of classs){
+//     item.style.backgroundColor= "yellow";
+// }
 
-let idd = document.querySelectorAll("#dom");
-for(let item of idd){
-    item.style.border= "5px solid red";
-}
+// let idd = document.querySelectorAll("#dom");
+// for(let item of idd){
+//     item.style.border= "5px solid red";
+// }
 
 
 
@@ -134,9 +139,9 @@ for(let item of idd){
 //---------------------- attribute Selection 
 
 // accessing attribute (getter) *** getter
-console.log(an.getAttribute("href"));
+// console.log(an.getAttribute("href"));
 
-console.setAttribute("href","http://reddit.com");
+// console.setAttribute("href","http://reddit.com");
 
 
 

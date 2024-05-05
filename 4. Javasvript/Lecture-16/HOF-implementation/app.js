@@ -37,28 +37,32 @@
 
 // // USING HOF------------------------------------------------------
 
-// function checkBoolean(item) {
-//     return typeof item === "boolean";
-//   }
-//   function checkNumber(item) {
-//     return typeof item === "number";
-//   }
-//   function checkString(item) {
-//     return typeof item === "string";
-//   }
-//   function check(arr, fn) {
-//     let result = [];
-//     for (let item of arr) {
-//       if (fn(item)) {
-//         result.push(item);
-//       }
-//     }
-//     return result;
-//   }
-//   let arr = [10, "sam", "vohra", true, 30, 40, false, "lol"];
-//   console.log(check(arr, checkString));
-//   console.log(check(arr, checkNumber));
-//   console.log(check(arr, checkBoolean));
+function checkBoolean(item) {
+    return typeof item === "boolean";
+}
+
+function checkNumber(item) {
+    return typeof item === "number";
+}
+
+function checkString(item) {
+    return typeof item === "string";
+}
+
+function check(arr, fn) {
+    let result = [];
+    for (let item of arr) {
+        if (fn(item)) {
+            result.push(item);
+        }
+    }
+    return result;
+}
+
+let arr = [10, "sam", "vohra", true, 30, 40, false, "lol"];
+console.log(check(arr, checkString));
+console.log(check(arr, checkNumber));
+console.log(check(arr, checkBoolean));
 
 
 // **********************************************************************************************************************************************
@@ -97,28 +101,28 @@
 // console.log(findBoolean(arr))
 
 // --------------USING HOF
-function checkNumber(item){
-    return typeof item === 'number';
-}
-function checkString(item){
-    return typeof item === 'string';
-}
+// function checkNumber(item){
+//     return typeof item === 'number';
+// }
+// function checkString(item){
+//     return typeof item === 'string';
+// }
 
-function checkBoolean(item){
-    return typeof item === "boolean"
-}
+// function checkBoolean(item){
+//     return typeof item === "boolean"
+// }
 
-function seperateAllTypes(arr,fn){
-    let temp = [];
-    for(let item of arr){
-        if(fn(item)){
-            temp.push(item);
-        }
-    }
-    return temp;
-}
+// function seperateAllTypes(arr,fn){
+//     let temp = [];
+//     for(let item of arr){
+//         if(fn(item)){
+//             temp.push(item);
+//         }
+//     }
+//     return temp;
+// }
 
-let arr = [10, "sam", "vohra", true, 30, 40, false, "lol"];
-console.log(seperateAllTypes(arr,checkBoolean))
-console.log(seperateAllTypes(arr,checkNumber))
-console.log(seperateAllTypes(arr,checkString))
+// let arr = [10, "sam", "vohra", true, 30, 40, false, "lol"];
+// console.log(seperateAllTypes(arr,checkBoolean))
+// console.log(seperateAllTypes(arr,checkNumber))
+// console.log(seperateAllTypes(arr,checkString))
