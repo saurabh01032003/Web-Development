@@ -1,4 +1,5 @@
 // // Closure : A function is never returned alone, A function is always returned with its dependent lexical scope/environment.
+
 // function outer(){
 //     let a = 10;
 //     let b = 20;
@@ -13,7 +14,7 @@
 // let d = outer();
 // d();
 
-// ------------------------------------------
+// // ------------------------------------------
 // let b = 20;
 // function outer(){
 //     let a = 10;
@@ -30,8 +31,9 @@
 
 // ----------------------------------------------
 
-// // Use of closure : For privatisation of methods
+// ******************** Real Life Use
 
+// // Use of closure : For privatisation of methods
 function counter() {
     let count = 0;
     return {
@@ -55,8 +57,10 @@ console.log(out);
 out.getCount();
 
 out.increment();
+out.increment();
 out.getCount();
 out.increment();
+out.getCount();
 out.decrement();
 out.getCount();
 out.reset();

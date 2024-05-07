@@ -10,52 +10,37 @@
 // // obj.d(); //wrong
 // obj.b(); //hi bhai
 // console.log(obj.a); //10
+// console.log(obj.toString); // this method is present in prototype of object
 // console.log(obj.c); //undef
 // console.log(obj.c()); //error
 
-// ----------------
-
-let person = {
-  naam: 10,
-  petDialogue: function () {
-    console.log("aaj kal ke nalle berozgaar cbhappri");
-  },
-};
-
-console.log(person.naam); //10
-console.log(person.kaam); //unde
-person.hello(); //error
-person.string(); //error
-// ------
-// console.log(person.toString()); //obj obj
-
-// console.log(person);
-
-// ------------
-
-// let person = {
-//   naam: 10,
-//   petDialogue: function () {
-//     console.log("aaj kal ke nalle berozgaar cbhappri");
-//   },
-// };
-// let peeps = {
-//   naam: 100,
-//   petDialogue: function () {
-//     console.log("hehehe aj kal ke nalle berozgaar cbhappri");
-//   },
-// };
+// ------------------------------------
 
 //dender proto -> pitaji value batane ke liye
-// console.log(person);
-// console.log(peeps);
-// console.log(person.__proto__);
-// console.log(peeps.__proto__);
 
-// ------------
+// ------------------------In case of Objects
+// let obj = {
+//   a: 10,
+//   b: function () {
+//     console.log("hi bhai");
+//   },
+// };
 
-// let arr = [10, 20, 40, 50];
+// console.log(obj.__proto__ === Object.prototype);
+// console.log(Object.prototype.__proto__ === null);
 
-// -------
 
-// let str = "samarth";
+// -----------------------------For Strings
+// let str = "saurabh Mishra";
+// console.log(str.length);
+// console.log(str.__proto__ === String.prototype);
+// console.log(String.prototype.__proto__ === Object.prototype); 
+// console.log(Object.prototype.__proto__ === null);
+
+// -----------------------------------
+// let arr = [10,'sam',"hi Sush",23];
+// console.log(arr.length);
+// console.log(Array.prototype);
+// console.log(arr.__proto__ === Array.prototype);
+// console.log(Array.prototype.__proto__ === Object.prototype);
+// console.log(Object.prototype.__proto__ === null);
