@@ -64,12 +64,20 @@
 
 // 5. sort()
 let arr = [1,11,100000,4,30,23];
-let returnedVal = arr.sort(); // firstly converts array elements into string than sort them lexicographically
-let ascArr = arr.sort(function compare(a,b){
+arr.sort(); // firstly converts array elements into string than sort them lexicographically
+console.log(arr);
+
+// For ascending order sorting of numbers
+arr.sort(function compare(a,b){
     return a-b;
 });
-console.log(returnedVal); 
-console.log(ascArr); 
+console.log(arr); 
+
+// For descending order sorting of numbers
+arr.sort(function compare(a,b){
+    return b-a;
+});
+console.log(arr); 
 
 // 5. reduce() : Home-Work
 // let arr = [10,20,30,40,50];
