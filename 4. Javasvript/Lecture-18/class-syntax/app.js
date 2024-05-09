@@ -6,7 +6,23 @@
 // //     this.favColor = favRang;
 // // }
 
-// // Jo constructor ke liye same hai wo classes ke liye bhi same hai
+// // Jo constructor funcion ke liye same hai wo classes ke liye bhi same hai
+
+// Constructor Function 
+// function Person(naam,umar){
+//     this.name = naam;
+//     this.age = umar;
+// };
+// Person.prototype.greeting = function(){
+//     return `Hello from ${this.name}`;
+// }
+// console.log(Person);
+// let person1 = new Person('Samarth',33);
+// console.log(person1); // object
+// console.log(person1.greeting()); // We can access the property greeting, defined in Person.prototype
+
+
+// Class Syntax is a syntactical sugar()
 
 // // class
 // class Person2 {
@@ -25,24 +41,35 @@
 
 // let p3 = new Person2("sarthak",19,"blue");
 // let p4 = new Person2("Saurabh",19,"dark blue");
+// console.log(p3);
 // console.log(p3.greeting());
 // console.log(p4.goodbye());
 
 // ---------------------------------------------
+// ********Inheritance
+
 class Kammoji{
-    constructor(yaade,bhool,email){
+    constructor(yaade,bhool){
         this.yaade = "Main tera boy-friend";
         this.bhool = "tu meri girl-friend";
     }
     greet(){
         return "tu mainu kaindi na na na na";
     }
+    goodbye(){
+        console.log(`Some goodbuys aree good senoritta`)
+    }
 }
-
+ 
 class KammojiKaAshiq extends Kammoji{
-    constructor(yaade,bhool,email){
-        super(yaade,bhool);
-        this.email = email;
+    constructor(yaade,bhool,mail){
+        // Jo property upar se aa rhi(i.e parent se enherit hoke aa rhi) use Super keyWord ke andar enclose kardo
+        super(yaade,bhool); // {yaade,bhool} -> inherited from Parent Kammoji
+        this.email = mail; // nayi property add hogai
+    }
+
+    greet(){
+        return 'Main whi hoon';
     }
 
     callMe(){
@@ -52,7 +79,14 @@ class KammojiKaAshiq extends Kammoji{
 
 let k2 = new KammojiKaAshiq ("sam","vohra","sam@9334375234");
 console.log(k2);
-console.log(Kammoji);
+console.log(k2.greet()); // greet KammojiKaAshiq class me hi mil gaya So' parent class me jayega hi nahi check karne
+console.log(k2.callMe());
+console.log(k2.goodbye());
+
+// // console.log(Kammoji);
+// let iAm = new Kammoji();
+// console.log(iAm);
+
 
 
 // JS is not OOPS language although it follows 4 pillors of OOPs(Inheritance, Polymorphism, Abstraction, Encapsulations)

@@ -55,20 +55,23 @@ function User(naam, umar){
 User.prototype.dance = function (){
     console.log(`${this.name} cna't dance saala`)
 };
+
 let person1 = new User("Ronny",25);
 let person2 = new User("Renuka",23);
 
 // User itself a prototype
-console.log(person1);
-person1.dance();
+// console.log(person1);
+// person1.dance();
+console.log(User.__proto__ === User.prototype);
                                                                 
-console.log(User.prototype.__proto__ === Object.prototype); // User.__proto__ : shows us a funcion
+// console.log(User.prototype.__proto__ === Object.prototype); // User.__proto__ : shows us a funcion
 
-// // // User is itself a prototype and acting as fallback source for object created
+// // User is itself a prototype and acting as fallback source for object created
 console.log(User.__proto__ === Function.prototype)
 
 console.log(Function.prototype.__proto__ === Object.prototype);
-console.log(User.prototype)
+
+// console.log(User.prototype)
 
 // // console.log(person1.prototype);
 // console.log(person2.__proto__); // dance property is stored
