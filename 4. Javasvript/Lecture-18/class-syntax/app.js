@@ -60,6 +60,11 @@ class Kammoji{
         console.log(`Some goodbuys aree good senoritta`)
     }
 }
+// class KammojiKaAshiq extends Kammoji{
+    
+// }
+// let ashiq1 = new KammojiKaAshiq();
+// console.log(ashiq1);
  
 class KammojiKaAshiq extends Kammoji{
     constructor(yaade,bhool,mail){

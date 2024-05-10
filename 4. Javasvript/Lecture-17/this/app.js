@@ -1,13 +1,7 @@
 // this-keyword
-// 1.direct functional invokation -> always points to the window object
-function sam(){
-    console.log(this);
-}
-sam();
-
-// 2. method invokation => always points to the object inside which 
 
 //everything inside JS IS an object
+
 //this always points to the object ❌
 
 // -----
@@ -21,27 +15,30 @@ sam();
 // 2. method invokation ✅
 // 3. constructor invokation ✅
 // -----
-// 4, indriect calling (call , bind , apply)
+// 4, indriect calling (call() , bind() , apply(  ))
 // 5. arrow functions
 
 // ---------------------------------------------
 
 // 1. direct functional invokation -> always points to the window object
 // function sam() {
-//   console.log(this);
+//   console.log(this); // this : here points to Window Object
 // }
-// sam();
+// sam(); // Whenever we run a js code, a global execution context is created(along with it a global object is also created known as Window object)
 
-// 2. method invokation => always points to the obj inside which method is defined
+
+// // 2. method invokation => always points to the obj inside which method is defined
 // let obj = {
 //   a: 10,
 //   b: 30,
 //   fn: function () {
-//     console.log(this);
-//   },
+//     console.log(this); 
+//   }, 
 // };
 
-// obj.fn();
+// obj.fn();// this is pointing to object(obj)
+// let naam = obj.fn;
+// naam(); // Simple function calling So' here, this points to window object
 
 // ----------------
 
@@ -49,6 +46,7 @@ sam();
 //   a: 10,
 //   b: 30,
 //   fn: function () {
+
 //     console.log(this);
 //   },
 // };
@@ -56,18 +54,18 @@ sam();
 
 // ----------------
 
-// let obj = {
-//   a: 10,
-//   b: 30,
-//   fn: function () {
-//     console.log(this); //obj - 1
-//     let a = function () {
-//       console.log(this); //window
-//     };
-//     a();
-//   },
-// };
-// obj.fn();
+let obj = {
+    a: 10,
+    b: 30,
+    fn: function () {//obj (object calling ke wajah se ye funtion run hua)
+        console.log(this);
+        let a = function () { // function invocation se ye function run hua hai
+            console.log(this); //window (because here, this is run due to function invocation i.e calling a())
+        };
+        a(); // function invocation
+    },
+};
+obj.fn();
 
 // ------------
 
@@ -91,8 +89,11 @@ sam();
 function Sam(dog, umar) {
     this.naam = dog;
     this.age = umar;
-  }
-  
-  let person1 = new Sam("maverick", 2);
-  let person2 = new Sam("bruno", 5);
-  console.log(person1);
+}
+
+let person1 = new Sam("maverick", 2);
+// this inside sam refers to person1(newly created object)
+let person2 = new Sam("bruno", 5);
+// this inside sam refers to person2(newly created object)
+
+console.log(person1);
