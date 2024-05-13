@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.inp{
+    height: 10px;
+    border: 2px solid white;
+    margin : 10px;
+    border-radius: 15px;
+}
 
 body{
     height: 100vh;
@@ -12,12 +18,14 @@ body{
 }
 
 .container{
-    margin: 10px auto;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 400px;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 input{
@@ -36,6 +44,11 @@ input{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 button{
