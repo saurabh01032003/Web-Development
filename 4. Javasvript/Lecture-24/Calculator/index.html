@@ -1,95 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" />
+      <div class="grid-buttons">
+        <button class="grey-btn">AC</button>
+        <button class="grey-btn">**</button>
+        <button class="grey-btn">%</button>
+        <button class="yellow-btn">/</button>
 
-<body>
-    <div class="outer">
-        <div class="result"></div>
-        <div class="symbol">
-            <table>
-                <div class="row">
-                    <tr>
-                        <td class="special">
-                            <button>C</button>
-                        </td>
-                        <td class="special">
-                            <button>+/-</button>
-                        </td>
-                        <td class="special">
-                            <button>%</button>
-                        </td>
-                        <td class="special">
-                            <button>/</button>
-                        </td>
-                    </tr>
-                </div>
-                <tr>
-                    <td>
-                        <button>7</button>
-                    </td>
-                    <td>
-                        <button>8</button>
-                    </td>
-                    <td>
-                        <button>9</button>
-                    </td>
-                    <td>
-                        <button class="special">*</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button>4</button>
-                    </td>
-                    <td>
-                        <button>5</button>
-                    </td>
-                    <td>
-                        <button>6</button>
-                    </td>
-                    <td>
-                        <button class="special">-</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button>1</button>
-                    </td>
-                    <td>
-                        <button>2</button>
-                    </td>
-                    <td>
-                        <button>3</button>
-                    </td>
-                    <td>
-                        <button class="special">+</button>
-                    </td>
-                </tr>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="yellow-btn">*</button>
 
-                <tr>
-                    <td colspan="2">
-                        <button>0</button>
-                    </td>
-                    <td>
-                        <button>.</button>
-                    </td>
-                    <td>
-                        <button class="special">=</button>
-                    </td>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="yellow-btn">-</button>
 
-                </tr>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="yellow-btn">+</button>
 
-            </table>
-        </div>
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="yellow-btn">=</button>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

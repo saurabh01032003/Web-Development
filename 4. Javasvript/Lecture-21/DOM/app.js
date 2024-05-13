@@ -7,29 +7,30 @@
 // 5. querySelectorALL
 
 // // -------------------1.TagName
-// let h1 = document.getElementsByTagName("h1"); //  returns an array
-// console.log(h1);
+let h1 = document.getElementsByTagName("h1"); //  returns an array
+console.log(h1);
 
 // // ----------------2. ID
-// let dom = document.getElementById("dom") // return single element(jo pahle aayega in html code)
-// console.log(dom); 
+let dom = document.getElementById("dom") // return single element(jo pahle aayega in html code)
+console.log(dom); 
 
 // // ---------------- 3. ClassName
-// let classes = document.getElementsByClassName("divv"); // returns array sort of thing (same as TagName)
-// console.log(classes);
+let classes = document.getElementsByClassName("divv"); // returns array sort of thing (same as TagName)
+console.log(classes);
+console.log(classes[0]);
+console.log(classes[1]);
 
 // // ----------4. querySelector (use to select class, id, tag)
-// let x = document.querySelector("h1"); // return single element(first occurence only)
-// console.log(x);
+let x = document.querySelector("h1"); // return single element(first occurence only)
+console.log(x);
 
-// let y = document.querySelector(".divv");//class selector // return single element(first occurence only)
-// console.log(y)
+let y = document.querySelector(".divv");//class selector // return single element(first occurence only)
+console.log(y)
 
-// let z = document.querySelector("#dom");// for id select // return single element(first occurence only)
-// console.log(z)
+let z = document.querySelector("#dom");// for id select // return single element(first occurence only)
+console.log(z)
 
-
-// // -------------5.query selector all (selects all occurences of class, id and tag) // returns array type
+// // // -------------5.query selector all (selects all occurences of class, id and tag) // returns array type
 // let p = document.querySelectorAll("h1");
 // console.log(p);
 
@@ -67,7 +68,7 @@
 
 // // -------------------
 
-let classes = document.getElementsByClassName("divv")
+// let classes = document.getElementsByClassName("divv")
 // classes[0].style.backgroundColor="aqua";
 // classes[1].style.backgroundColor="green";
 
