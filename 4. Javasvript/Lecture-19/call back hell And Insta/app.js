@@ -7,7 +7,6 @@ function step1(fn){
     },4000);
 }
 
-
 // filter
 function step2(image,fn) {
     console.log(`applying filter to the ${image}`);
@@ -42,6 +41,9 @@ step1(function (image){ // step1 ka arguement ek function hai
     });
 });
 
+// Disadvantages
 
-// Function Hell : function ke andar multiple call back functions
-// Pyramid of DOOM : Code grow horizontally insted of vertically-> this leads to complexity of code which results difficulty in debugging
+// Function Hell : function ke andar multiple call back functions, horizontal increment of code 
+// 1. Pyramid of DOOM : Code grow horizontally insted of vertically-> this leads to complexity of code which results difficulty in debugging
+
+// 2. Dependencies on other function very much
