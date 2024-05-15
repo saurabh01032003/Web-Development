@@ -15,7 +15,6 @@
 //--------------------------
 
 // console.log("start");
-
 // setTimeout(function(){
 //     console.log("Wait for 4 sec");
 // },4000); // this statement will execute after 4 sec
@@ -33,9 +32,8 @@
 //     console.log("run after 2 sec");
 // },2000);
 
-// // Event Loop : It constantly check call stack , if call stack becomes empty than it do the work provided by call back queue by pushing it into call stack(to run)
-
 // console.log("End");
+// // Event Loop : It constantly check call stack , if call stack becomes empty than it do the work provided by call back queue by pushing it into call stack(to run)
 
 
 // ------------------------------------------------
@@ -46,7 +44,6 @@
 // setTimeout(function(){
 //     console.log("hello my friend");
 // },0); // this will be present in call back queue till call stack becomes empty, call stack becomes empty when "End"(line:39) will be printed
-
 
 // console.log("End"); 
 
