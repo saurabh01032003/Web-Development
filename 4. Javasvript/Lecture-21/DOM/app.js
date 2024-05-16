@@ -1,3 +1,6 @@
+//DOM(Document Object Model) : Changing html file using javascript only(without going into html file).
+
+
 // There are 5 Selectors in DOM
 
 // 1. getElementById
@@ -7,38 +10,44 @@
 // 5. querySelectorALL
 
 // // -------------------1.TagName
-let h1 = document.getElementsByTagName("h1"); //  returns an array
-console.log(h1);
+// let h1 = document.getElementsByTagName("h1"); //  returns an array
+// console.log(h1);
 
 // // ----------------2. ID
-let dom = document.getElementById("dom") // return single element(jo pahle aayega in html code)
-console.log(dom); 
+// let dom = document.getElementById("dom") // return single element(jo pahle aayega in html code)
+// console.log(dom); 
 
 // // ---------------- 3. ClassName
-let classes = document.getElementsByClassName("divv"); // returns array sort of thing (same as TagName)
-console.log(classes);
-console.log(classes[0]);
-console.log(classes[1]);
+// let classes = document.getElementsByClassName("divv"); // returns array sort of thing (same as TagName)
+// console.log(classes);
+// console.log(classes[0]);
+// console.log(classes[1]);
 
 // // ----------4. querySelector (use to select class, id, tag)
-let x = document.querySelector("h1"); // return single element(first occurence only)
-console.log(x);
+// let x = document.querySelector("h1"); // return single element(first occurence only)
+// console.log(x);
 
-let y = document.querySelector(".divv");//class selector // return single element(first occurence only)
-console.log(y)
+// let y = document.querySelector(".divv");//class selector // return single element(first occurence only)
+// console.log(y)
 
-let z = document.querySelector("#dom");// for id select // return single element(first occurence only)
-console.log(z)
+// let z = document.querySelector("#dom");// for id select // return single element(first occurence only)
+// console.log(z)
 
 // // // -------------5.query selector all (selects all occurences of class, id and tag) // returns array type
 // let p = document.querySelectorAll("h1");
 // console.log(p);
+// console.log(p[0]);
+// console.log(p[1]);
 
 // let q = document.querySelectorAll(".divv");
 // console.log(q);
+// console.log(q[0]);
+// console.log(q[1]);
 
-// let r = document.querySelectorAll("#dom");
+// let r = document.querySelectorAll("#dom"); // return array sort of thing (but we generally avoid giving same ids to multiple elements)
 // console.log(r);
+// console.log(r[0]);
+// console.log(r[1]);
 
 
 // ****************************************************************************************************
@@ -68,7 +77,7 @@ console.log(z)
 
 // // -------------------
 
-// let classes = document.getElementsByClassName("divv")
+let classes = document.getElementsByClassName("divv")
 // classes[0].style.backgroundColor="aqua";
 // classes[1].style.backgroundColor="green";
 
@@ -96,7 +105,7 @@ console.log(z)
 // classs.style.backgroundColor= "yellow";
 
 // let idd = document.querySelector("#dom");
-// h1.style.border= "5px solid red";
+// idd.style.border= "5px solid red";
 
 // -----------query Selector ALL
 
@@ -110,6 +119,8 @@ console.log(z)
 //     item.style.backgroundColor= "yellow";
 // }
 
+
+//---------wrong practice(multiple elements ko same id dena)
 // let idd = document.querySelectorAll("#dom");
 // for(let item of idd){
 //     item.style.border= "5px solid red";
@@ -117,24 +128,22 @@ console.log(z)
 
 
 
-// --------------------------******IMPORTANT******
-// textContent is brain-Less(CSS read nahi kar pata)
-// innerText is brainFull reads CSS property
-
-// let ele = document.querySelector("h1")
-
-//  // code ke andar ke contents ko access karne ke liye liye (getter)
-// console.log(ele.innerText,"h1");
-// console.log(ele.textContent,"h1-dash");
-// console.log(ele.innerHTML,"h1") // sara ka sara tag display karega
+// -----------******IMPORTANT******
 
 
-// // setter
-// ele.innerText = "Sam";
-// ele.textContent = "<h1>Hi Sam</h1>"
 
 
-// ele.innerHTML = "<i>vohra</i>"; 
+
+//===================== Attribute Manipulation
+
+
+
+
+
+
+
+
+
 
 
 //---------------------- attribute Selection 

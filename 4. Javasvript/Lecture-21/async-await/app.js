@@ -16,6 +16,56 @@
 // async : function ke andar jane dega
 // await : always used inside async function , and waits for some time, && javascript wait nahi karta so niche ke part skip ho jayenge(within same function)
 
+// ------------------------------------
+
+// function some(){
+// }
+// console.log(some());// return undefined
+
+
+// ----------
+
+// let p1 = new function(){
+// }
+// console.log(p1); // return an empty object
+
+//--------------------
+// async function always runs with 'await'
+// async function some(){
+
+// }
+// console.log(some()); // output is promise, as async function returns a promise with value undefined
+
+
+// // ------------
+// async function some1(){
+//     return 10;
+// }
+// console.log(some1()); // promise with value 10
+
+// ----------------------
+
+
+async function some(){
+    await new Promise( (resolve , reject)=>{
+        setTimeout( ()=>{
+            console.log('3 second hogye');
+            resolve();
+        } , 3000)
+    } )
+
+    await new Promise( (resolve , reject)=>{
+        setTimeout( ()=>{
+            console.log('2s hogye');
+            resolve()
+        } , 2000 )
+
+    } )
+    console.log('dono kaam hogye')
+}
+
+some();
+// console.log(some())
 
 
 //======================================
@@ -122,72 +172,3 @@
 // console.log(1000);
 // b();
 // console.log(2000);
-
-
-
-
-
-
-
-
-
-
-
-
-// ------------
-
-// async function a() {
-//     console.log("start");
-//     let out = await fetch("https://api.tvmaze.com/search/shows?q=girls");
-//     console.log(out);
-//     console.log("end");
-//   }
-//   async function b() {
-//     console.log(10);
-//     fetch("https://api.tvmaze.com/search/shows?q=girls");
-//     console.log(20);
-//   }
-  
-//   a();
-//   console.log(1000);
-//   b();
-//   console.log(2000);
-
-
-// async function a(){
-//     console.log("start");
-//     let out = await fetch("some link") // yaha wait karega iske wajah se niche ka part of same scope skip ho jayega and queue me lag jayega
-//     console.log(out);
-//     console.log("end");
-// }
-// a();
-
-// async function b(){
-//     console.log(10);
-//     fetch("Some links") // yaha wait nahi karega
-//     console.log(20)
-// }
-
-// a();
-// console.log(1000);
-// b();
-// console.log(2000);
-
-
-// -------------------
-// async function myDisplay() {
-//     let myPromise = new Promise(function (resolve, reject) {
-//         resolve("I love You !!");
-//     });
-
-//     myPromise.then(function(argum){
-//         console.log(`${argum}`);
-//     });
-
-//     let p = new Promise(function (resolve, reject) {
-//         console.log('Kya hua meri jaan');
-//     });
-// }
-// myDisplay();
-
-

@@ -15,7 +15,7 @@ step1.then(()=>{
             console.log("filter applied");
             resolve();
         },4000);
-    })
+    });
 }).then(function(){
     return new Promise(function(resolve,reject){
         console.log("Please wait for 3sec, I am applying Caption to the image");
