@@ -1,32 +1,35 @@
-let divv = document.querySelector("div");
+// ******************Adding Elements in html tag (3 methods)
 
 
-let h3 = document.createElement("h3");
-h3.innerText = "Main whi hoon jise kabhi";
+//-------------- 1.appendChild()  (accepts only one arguement)
+let p = document.createElement("p"); // creating element(tag) with name 'p'
+let newDiv = document.createElement("div");
 
-let h4 = document.createElement("h4");
-h4.innerText = "Hi my Name is Saurabh";
+let parent = document.querySelector('article');
+// parent.appendChild(p);
+// parent.appendChild(newDiv);
 
+newDiv.innerHTML = "Rabba be bhula baitha tere karte"
+p.innerText = "paragraph hoon main parent ka sabse niche wala child";
 
-divv.appendChild(h3);
-divv.appendChild(h4);
+// ----------- accepts only (tag) as arguement
+// p.appendChild('Ram ji start me add nahi ho paunga');  // wrong
+//------------------------
 
-// You can only append one element at a time using append function
-// divv.appendChild(h3,h4); //Wrong
-
-
-// ----------------
-// For appending multiple elements 
-let span = document.createElement("span");
-span.innerText = "I am inside Span"
-divv.append(span,h4); // niche ki side add honge inside given element(i.e koi agar element pahle se present hai to uske niche naye elements add honge)
+// parent.appendChild(p,div); // wrong (because it only accepts one arguement)
 
 
-// prepend
-let secc = document.querySelector("section");
-secc.prepend(span)
+//------------- 2.append() (for multiple elements last me add karega inside parent)
 
-// secc.before(span);  // EK time pe ek hi use hoga ya to before or after
-// secc.after(span);
+// parent.append(p,newDiv);
+
+//----It can accept (tag + text) both as arguement
+// parent.append("Last me as a text add ho hi jaunga append hoon n");
 
 
+// -------------3. prepend() (starting me add hoga)
+
+// parent.prepend(p,newDiv); 
+
+// it can accepts (tag + text) both as arguement
+// parent.prepend("Main to start me add ho jaunga as a text")

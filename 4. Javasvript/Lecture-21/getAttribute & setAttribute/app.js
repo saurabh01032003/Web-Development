@@ -1,1 +1,0 @@
-let anchor = document.querySelector('a');
