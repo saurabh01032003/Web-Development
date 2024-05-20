@@ -58,13 +58,13 @@
 
 
 // ---------------------------------Q. on clicking button the color of body changes
-let body = document.querySelector("body");
+// let body = document.querySelector("body");
 
-let btn = document.querySelector("button");
+// let btn = document.querySelector("button");
 
-function changeColor(){
-    body.style.backgroundColor = "yellow";
-}
+// function changeColor(){
+//     body.style.backgroundColor = "yellow";
+// }
 
 // btn.addEventListener('click',changeColor);
 
@@ -97,20 +97,20 @@ function changeColor(){
 //     console.log("main hoon External event")
 // }
 
-// btn.onclick = boss; // yaha run nahi karte function ko
+// btn.onclick = boss; // yaha call nahi karte function ko
 
 
 // --------------------------------
-// function boss(){
-//     console.log("Chata laga")
-// }
+function boss(){
+    console.log("Chata laga")
+}
 
-// function slap(){
-//     console.log("Laal hogaya")
-// }
+function slap(){
+    console.log("Laal hogaya")
+}
 
-// // btn.onclick = boss;
-// // btn.onclick = slap;// Override hojayega (ek time pe ek hi function chalega)
+btn.onclick = boss;
+btn.onclick = slap;// Override hojayega (ek time pe ek hi function chalega)
 
 // // --------------------------------- We can trigger multiple function on one event, So we use event listerner
 // btn.addEventListener("click",boss);

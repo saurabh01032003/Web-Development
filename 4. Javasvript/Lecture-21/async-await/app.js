@@ -93,15 +93,15 @@ some();
 
 // -----------
 
-// async function sam(a, b, c) {
-//   console.log(10);
-//   //   let ans = fetch("https://api.tvmaze.com/search/shows?q=girls");
-//   let ans = await fetch("https://api.tvmaze.com/search/shows?q=girls");
-//   console.log(20);
-//   console.log(ans);
-// }
+async function sam(a, b, c) {
+  console.log(10);
+  //   let ans = fetch("https://api.tvmaze.com/search/shows?q=girls");
+  let ans = await fetch("https://api.tvmaze.com/search/shows?q=girls");
+  console.log(20);
+  console.log(ans);
+}
 
-// sam(10, 20, 30);
+sam(10, 20, 30);
 
 // ----------
 

@@ -1,4 +1,83 @@
 
+let inpEl = document.querySelector("#text");
+
+let btn = document.createElement("button");
+
+let parent = document.querySelector("ul");
+
+btn.addEventListener("click",function (e){
+    let li = document.createElement("li");
+    parent.appendchild("li");
+    li.innerHTML = e.target.value;
+})
+console.log(li);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // -------------------------------------
 
 // let inp = document.querySelector("input");

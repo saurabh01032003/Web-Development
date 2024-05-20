@@ -62,6 +62,8 @@ let person2 = new User("Renuka",23);
 // User itself a prototype
 // console.log(person1);
 // person1.dance();
+
+console.log(person1.__proto__ == User.prototype);
 console.log(User.__proto__ === User.prototype);
                                                                 
 // console.log(User.prototype.__proto__ === Object.prototype); // User.__proto__ : shows us a funcion
