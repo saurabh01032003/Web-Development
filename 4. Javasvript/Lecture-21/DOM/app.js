@@ -62,7 +62,7 @@
 
 // // -------------------------
 
-// // Agar saare elements of h1(array) pr css lagani ho
+// Agar saare elements of h1(array) pr css lagani ho
 // for(let item of h1){
 //     item.style.fontSize = "90px";
 // }
@@ -77,7 +77,9 @@
 
 // // -------------------
 
-let classes = document.getElementsByClassName("divv")
+let classes = document.querySelectorAll(".divv")
+console.log(classes);
+
 // classes[0].style.backgroundColor="aqua";
 // classes[1].style.backgroundColor="green";
 
@@ -87,12 +89,12 @@ let classes = document.getElementsByClassName("divv")
 // }
 
 
-// for(let item of classes){
+// for (let item of classes) {
 //     // If you want to give multiple property with in same line
 //     item.style.cssText = `color: red;
-//     background-color:yellow; 
-//     font-size:50px;
-//     border : 2px solid black`;
+//                         background-color:yellow; 
+//                         font-size:50px;
+//                         border : 2px solid black;`
 // }
 
 
@@ -125,34 +127,3 @@ let classes = document.getElementsByClassName("divv")
 // for(let item of idd){
 //     item.style.border= "5px solid red";
 // }
-
-
-
-// -----------******IMPORTANT******
-
-
-
-
-
-//===================== Attribute Manipulation
-
-
-
-
-
-
-
-
-
-
-
-//---------------------- attribute Selection 
-
-// accessing attribute (getter) *** getter
-// console.log(an.getAttribute("href"));
-
-// console.setAttribute("href","http://reddit.com");
-
-
-
-
