@@ -9,8 +9,9 @@ let parent = document.querySelector('article');
 // parent.appendChild(p);
 // parent.appendChild(newDiv);
 
-newDiv.innerHTML = "Rabba be bhula baitha tere karte"
-p.innerText = "paragraph hoon main parent ka sabse niche wala child";
+// newDiv.innerHTML = "new Div"
+// p.innerText = "new Paragraph tag";
+// console.log(parent);
 
 // ----------- accepts only (tag) as arguement
 // p.appendChild('Ram ji start me add nahi ho paunga');  // wrong
@@ -31,5 +32,5 @@ p.innerText = "paragraph hoon main parent ka sabse niche wala child";
 
 // parent.prepend(p,newDiv); 
 
-// it can accepts (tag + text) both as arguement
+// // it can accepts (tag + text) both as arguement
 // parent.prepend("Main to start me add ho jaunga as a text")

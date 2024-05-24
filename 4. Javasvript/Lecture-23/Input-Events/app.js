@@ -1,11 +1,11 @@
 // let inpEl = document.querySelector("input");
 
-// // Whenever an event is executed, along with function, an object is attached with it(we generally name it as event/e)
-// // e/event is an object-> containing various properties -> event.target(only of our importance) => (jis element pr event target hua hai wo dega i.e in our case <input> tag poora dega)
+// // // Whenever an event is executed, along with function, an object is attached with it(we generally name it as event/e)
+// // // e/event is an object-> containing various properties -> event.target(only of our importance) => (jis element pr event target hua hai wo dega i.e in our case <input> tag poora dega)
 
 // function fun(e){
-//     // console.log(e); // event/e object will be printed
-//     // console.log(e.target); // event object ke andar target property hai jo "<input type="text"></input>" lakr dega
+//     console.log(e); // event/e object will be printed
+//     console.log(e.target); // event object ke andar target property hai jo "<input type="text"></input>" lakr dega
 
 //     console.log(e.target.value); // jo input ke andar value hum denge whi print hoga
 // }

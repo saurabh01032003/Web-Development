@@ -22,17 +22,16 @@
 
 // console.log(body.children); // h1, section,script 
 // console.log(body.children[1].children[1].children) // section ke bachhe (do article) -> dusre bache ke bachhe(div6,div7,div8,para2)
-
 // console.log(body.children[1].children[1].children[0]); // div6 
 // console.log(body.children[1].children[1].children[1]); // div7
 // console.log(body.children[1].children[1].children[2]) // div8
 // console.log(body.children[1].children[1].children[3]) // p
 
 //----------3. nextElementSibling
-let div2 = document.querySelector(".div2class");
-console.log(div2);
-console.log(div2.nextElementSibling); // div3 -> div2 ka next sibling
+// let div2 = document.querySelector(".div2class");
+// console.log(div2);
+// console.log(div2.nextElementSibling); // div3 -> div2 ka next sibling
 
-// -------4. previousElementSibling
-console.log(div2.previousElementSibling);// div1-> div2 ka prev. sibling
+// // -------4. previousElementSibling
+// console.log(div2.previousElementSibling);// div1-> div2 ka prev. sibling
 

@@ -1,4 +1,4 @@
-// // ---------------inline ke functions
+// // // ---------------inline ke functions
 // function doSomething(){
 //     console.log("Inline ke andar ka pahla button press ho gya") // ye console me print hoga
 // }
@@ -17,19 +17,20 @@
 // let btn = document.querySelector('button');
 
 
-// ---------- onclick is event handler content attribute
-// // btn.onclick = function (){
-// //     console.log("She is my love language");
-// // }
+// // ---------- onclick is event handler content attribute
+// btn.onclick = function (){
+//     console.log("She is my love language");
+// }
+// console.dir(btn); // now "onclick" property of object button will show a function
 
-// //----Some more events : 
-// // --------------- onmouseenter : mouse ko simply button ke upar le jaoge to function chalega
+// // //----Some more events : 
+// // // --------------- onmouseenter : mouse ko simply button ke upar le jaoge to function chalega
 
 // btn.onmouseenter = function(){
 //     btn.style.color = "red";
 // }
 
-// // --------------- onmouseleave : mouse ko simply button se hataoge to function chalega
+// // // --------------- onmouseleave : mouse ko simply button se hataoge to function chalega
 
 // btn.onmouseleave = function(){
 //     btn.style.color = "green";
@@ -100,41 +101,41 @@
 // btn.onclick = boss; // yaha call nahi karte function ko
 
 
-// --------------------------------
-function boss(){
-    console.log("Chata laga")
-}
+// // --------------------------------
+// function boss(){
+//     console.log("Chata laga")
+// }
 
-function slap(){
-    console.log("Laal hogaya")
-}
+// function slap(){
+//     console.log("Laal hogaya")
+// }
 
-btn.onclick = boss;
-btn.onclick = slap;// Override hojayega (ek time pe ek hi function chalega)
+// // btn.onclick = boss;
+// // btn.onclick = slap;// Override hojayega (ek time pe ek hi function chalega)
 
-// // --------------------------------- We can trigger multiple function on one event, So we use event listerner
+// // // --------------------------------- We can trigger multiple function on one event, So we use event listerner
 // btn.addEventListener("click",boss);
 // btn.addEventListener("click",slap);
 
 
 // // -----------------------------------------------------------------------------------
-// let body = document.querySelector("body");
+let body = document.querySelector("body");
 
-// function colorMeRed(){
-//     body.style.backgroundColor = "red";
-// }
+function colorMeRed(){
+    body.style.backgroundColor = "red";
+}
 
-// function colorMeGreen(){
-//     body.style.backgroundColor = "green";
-// }
+function colorMeGreen(){
+    body.style.backgroundColor = "green";
+}
 
-// function colorMeYellow(){
-//     body.style.backgroundColor = "yellow";
-// }
-// let btnR = document.querySelector("#red");
-// let btnG= document.querySelector("#green");
-// let btnY = document.querySelector("#yellow");
+function colorMeYellow(){
+    body.style.backgroundColor = "yellow";
+}
+let btnR = document.querySelector("#red");
+let btnG= document.querySelector("#green");
+let btnY = document.querySelector("#yellow");
 
-// btnR.addEventListener("click",colorMeRed);
-// btnG.addEventListener("click",colorMeGreen);
-// btnY.addEventListener("click",colorMeYellow);
+btnR.addEventListener("click",colorMeRed);
+btnG.addEventListener("click",colorMeGreen);
+btnY.addEventListener("click",colorMeYellow);
