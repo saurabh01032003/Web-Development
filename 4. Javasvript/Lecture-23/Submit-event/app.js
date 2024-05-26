@@ -7,9 +7,9 @@ formEle.addEventListener("submit", function (event) {
 
     event.preventDefault();// to stop form from reloading/refressing (default behaviour ko rokne ke liye)
 
-    // console.log(event.target); // give same element i.e <form>....</form>
+    console.log(event.target); // give same element i.e <form>....</form>
 
-    // console.log(formEle.elements); // on submitting form it will give all elements inside form (shown below)
+    console.log(formEle.children); // on submitting form it will give all elements inside form (shown below)
     // form ke andar ye sare elements at index wise shown 
     /* 0: input
       1: input
