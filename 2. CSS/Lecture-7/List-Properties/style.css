@@ -8,16 +8,18 @@ li {
 
     /* All properties are valid */
     /* list-style-type: square,circle,disc; */
-    list-style-type: none;
+
+    /* when you don't wan't any of items */
+    /* list-style-type: none;  */
 }
 
 div {
     /* border-width: 5px;
-    border-style: dotted; */
-    /* border-color: green; */
+    border-style: dotted;
+    border-color: green; */
 
     /* Same kaam karega */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     /* Border ki shadow ke liye (same as previous) (i.e x-direction , y-direction, blur-radius, color*/
     box-shadow: 3px 2px 1px green;

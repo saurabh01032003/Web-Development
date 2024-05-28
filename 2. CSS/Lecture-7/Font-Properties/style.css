@@ -1,8 +1,10 @@
 h1 {
     font-size: 15px;
     font-family: monospace;
-    /* font-weight: 900; */
+    font-weight: 900;
     /* Gap between two lines */
+
+    /* top and bottom */
     /* line-height: 10;  */
 
     /* space between each latters */
@@ -12,11 +14,11 @@ h1 {
 
 span {
     /* copy the property of font-family from embedded code side property */
-    /* font-family: "Roboto", sans-serif; */
-    /* font-weight: 500; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 
     /* All three property can hold : visit MDN */
-    /* font-style:oblique,normal,none; */
+    font-style:oblique,normal,none;
 
     /* visit : MDN */
     /* font-variation-settings:"wdth" 850; */
