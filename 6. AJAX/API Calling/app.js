@@ -32,7 +32,7 @@
 
 // res.then((function(data){
 //     console.log(data);
-//     console.log(data.json());
+//     // console.log(data.json());
 // })).catch(
     
 // )
