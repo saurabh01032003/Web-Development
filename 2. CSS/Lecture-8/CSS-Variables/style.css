@@ -1,4 +1,4 @@
-/* scope */
+/* To create a variable in global scope we use :root selector */
 :root{
     --laal-rang: red;
     --heera: row;

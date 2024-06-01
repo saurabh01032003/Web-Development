@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* div {
+div {
     height: 100px;
     width: 100px;
-} */
+}
 
 /* Best Website for flex-box */
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -16,7 +16,6 @@
 
 section {
     height: 700px;
-    width: 650px;
     border: 2px solid red;
     display: flex;
 
@@ -83,6 +82,16 @@ section {
     /* flex-wrap: wrap;
     align-content: flex-end; */
 
+    /* --------------- */
+    flex-wrap: wrap;
+    align-items:center;
+
+    /* now you will see entire content at center */
+    align-content: center; 
+    align-content: start; 
+    align-content: space-around; 
+    align-content: space-between; 
+
 
     /* ----------------- */
     /* flex-wrap: wrap; */
@@ -94,7 +103,9 @@ section {
 
 
 /* grow && shrink -div size remove karke dekho mazza aayega */
-#one{
+
+/* yaha ratio me divide hota hai, i.e flex grow and shring relative to one another */
+/* #one{
     flex-grow: 1;
 }
 
@@ -103,19 +114,19 @@ section {
 }
 
 #three {
-    flex-grow: 5;
+    flex-grow: 5; */
 
     /* Pata nahi kyon yaha kaam nahi kar raha(refer w3school) */
     /* flex-shrink: 1; */
     /* align-self: flex-end; */
 
-}
+/* }
 #four{
     flex-grow: 2;
 }
 #five{
     flex-grow: 1;
-}
+} */
     /* #four{ */
     /* flex-grow: 1; */
     /* flex-shrink: 5;
