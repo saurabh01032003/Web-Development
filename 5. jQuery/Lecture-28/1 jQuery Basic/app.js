@@ -6,8 +6,13 @@
 // than go to downloads(and take compressed version and put this into your file using .js extension )
 
 // Javascript ki libraries hai : jQuery && React.js
-
 // React.js ke bhi frameworks hai : NextJs && ReactNative (hierarchy)
+
+// difference between library and framework
+
+// library ke code ko hum use karte hai, 
+// while framework humare code ko use karta hai 
+
 
 // --------------------
 
