@@ -1,0 +1,62 @@
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 400px;
+    display: block;
+    font-size: 26px;
+    margin: 20px auto;
+}
+img{
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+
+}
+button:hover{
+    background-color: #0056b3;
+}
+button{
+    width: 150px;
+    display: block;
+    font-size: 26px;
+    margin: 10px auto;
+    background-color: #007BFF;
+
+}
+
+#list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+figure{
+    border: 2px solid black;
+    min-width: 250px;
+}
+h2 , h3{
+    text-align: center;
+    font-family: monospace;
+    font-size:20px ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
