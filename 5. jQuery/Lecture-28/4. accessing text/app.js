@@ -1,11 +1,11 @@
 // // textContent(like in dom)
 
 // // getters
-// console.log($('p').text()); // don't read css
+console.log($('p').text()); // don't read css
 
-// // setters
-// $('p').text('vande matram');
-// console.log($('p').text());
+// setters
+$('p').text('vande matram');
+console.log($('p').text());
 
 
 // ------------------------
@@ -14,7 +14,7 @@
 // getter
 console.log($('p').html());
 
-// setter
+// // setter
 $('p').html('Kaha ho bhagwan ji, Jaldi aa jaiye mujhe aapki sabse jada jarurat hai');
 console.log($('p').html());
 
@@ -29,11 +29,11 @@ console.log($('input').attr('type'));
 
 
 // setter
-$('a').attr('href','http://instagram.com');
-console.log($('a').attr('href'));
+// $('a').attr('href','http://instagram.com');
+// console.log($('a').attr('href'));
 
-$('input').attr('type','radio');
-console.log($('input').attr('type'));
+// $('input').attr('type','radio');
+// console.log($('input').attr('type'));
 
 
 

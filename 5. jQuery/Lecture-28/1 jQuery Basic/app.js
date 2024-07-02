@@ -23,15 +23,15 @@ console.log(jQuery);
 // ----------Selectors------------------
 // '$' is equivalent to "querySelectorAll" in DOM
 
-let tags = $('h1'); // tag selector
-// let tags = jQuery('h1'); // tag selector
+// let tags = $('h1'); // tag selector
+let tags = jQuery('h1'); // tag selector
 console.log(tags);
 
 // // -----------------
-// let idd = $('#bro'); // id Selector
-// console.log(idd);
+let idd = $('#bro'); // id Selector
+console.log(idd);
 
 
 // // -----------------
-// let classes = $('.bhai'); // class selector
-// console.log(classes);
+let classes = $('.bhai'); // class selector
+console.log(classes);

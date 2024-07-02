@@ -5,11 +5,11 @@ $('#fadeout').click(function(){
 });
 
 $('#fadein').click(function(){
-    $('#container').fadeIn('slow')
+    $('#container').fadeIn();
 })
 
 $('#fadetoggle').click(function(){
-    $('#container').fadeToggle()
+    $('#container').fadeToggle('slow')
 });
 
 // console.log($('#fadein').text());
