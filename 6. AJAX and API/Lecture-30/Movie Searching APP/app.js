@@ -28,10 +28,13 @@ function manipulationDom(allData){
     console.log(allData);
     for(let item of allData){
         let figure = document.createElement('figure');
-        figure.innerHTML = `
-            <img src=${item.show.image.original} />
-            <h2>${item.show.name}</h2>    
-        `
+
+        if(item.show.image){ // agar image available hoga -> than only we have to put it inside div to display
+            figure.innerHTML = `
+                <img src=${item.show.image.original} />
+                <h2>${item.show.name}</h2>    
+            `
+        }
         list.append(figure);
     }
 
