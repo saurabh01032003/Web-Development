@@ -1,42 +1,41 @@
+// // Array destructuring
 
-// // // Array destructuring
+// let fruits = ['apple','banana','mango','guava','pineapple','lichi']
 
-// // let fruits = ['apple','banana','mango','guava','pineapple','lichi']
+// // earlier way
+// let first = fruits [0];
+// let second = fruits [1];
 
-// // // earlier way
-// // // let first = fruits [0];
-// // // let second = fruits [1];
+// console.log(first);
+// console.log(second);
 
-// // // console.log(first);
-// // // console.log(second);
+// //------------- destructuring 
+// let [pehla, dusra,tisra] = fruits;
+// console.log(pehla); // apple
+// console.log(dusra); // banana
+// console.log(tisra); // mango
 
-// // //------------- destructuring 
-// // let [pehla, dusra,tisra] = fruits;
-// // console.log(pehla); // apple
-// // console.log(dusra); // banana
-// // console.log(tisra); // mango
+// // -----------------------
+// let fruits = ['apple','banana','mango']
 
-// // // -----------------------
-// // let fruits = ['apple','banana','mango']
+// let [first,second,third,fourth] = fruits;
 
-// // let [first,second,third,fourth] = fruits;
+// console.log(first); // apple
+// console.log(second); // banana
+// console.log(third); // mango
+// console.log(fourth); // undefined -> 4th index pe koi element hi nahi hai fruits array me
 
-// // console.log(first); // apple
-// // console.log(second); // banana
-// // console.log(third); // mango
-// // console.log(fourth); // undefined -> 4th index pe koi element hi nahi hai fruits array me
+// -------------------------
+// let fruits = ['apple','banana','mango']
 
-// // -------------------------
-// // let fruits = ['apple','banana','mango']
+// let [first,second,third,fourth = "anonymous fruit"] = fruits;
 
-// // let [first,second,third,fourth = "anonymous fruit"] = fruits;
+// console.log(first); // apple
+// console.log(second); // banana
+// console.log(third); // mango
+// console.log(fourth); // anonymous fruit
 
-// // console.log(first); // apple
-// // console.log(second); // banana
-// // console.log(third); // mango
-// // console.log(fourth); // anonymous fruit
-
-// // ------------------------------
+// ------------------------------
 // let fruits = ['apple','banana','mango','pineapple']
 
 // let [first,second,third,fourth = "anonymous fruit"] = fruits;
@@ -64,11 +63,10 @@ let car = {
 // let {n,p} = car;
 // console.log(n,p);
 
-// right way ☑️ 
+// // right way ☑️ 
 // let {name, price} = car;
 // console.log(name);
 // console.log(price);
-
 
 // ----------- change name of key
 
@@ -80,7 +78,7 @@ let car = {
 // console.log(name); // error -> as we have changed name
 // console.log(price); // error
 
-// -------------------
+// // -------------------
 let {name :n ="maruti",price:p} = car;
 console.log(n); // nano -> agar nano nahi present hota tab default print hota
 console.log(p); // 100000
