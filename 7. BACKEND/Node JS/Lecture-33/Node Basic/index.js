@@ -41,3 +41,4 @@ console.log(x); // C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-
 
 // ------------------ __dirname
 console.log(__dirname); // jis directory ko run kar rahe ho uska path
+
