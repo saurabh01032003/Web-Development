@@ -1,0 +1,120 @@
+Microsoft Windows [Version 10.0.22631.3810]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\saura>node -v
+v20.13.1
+
+C:\Users\saura>cd desktop
+
+C:\Users\saura\Desktop>cd Kode Mafia
+
+C:\Users\saura\Desktop\Kode Mafia>cd Backend
+The system cannot find the path specified.
+
+C:\Users\saura\Desktop\Kode Mafia>cd BACKEND
+The system cannot find the path specified.
+
+C:\Users\saura\Desktop\Kode Mafia>cd 7. Backend
+
+C:\Users\saura\Desktop\Kode Mafia\7. BACKEND>cd Node JS
+
+C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS>cd Lecture-32
+
+C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32>node
+Welcome to Node.js v20.13.1.
+Type ".help" for more information.
+> 2+3
+5
+
+> 'saurabh'.toUpperCase()
+'SAURABH'
+> global
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  structuredClone: [Function: structuredClone],
+  atob: [Getter/Setter],
+  btoa: [Getter/Setter],
+  performance: [Getter/Setter],
+  fetch: [Function: value],
+  crypto: [Getter]
+}
+
+
+> console.log("Saurabh")
+Saurabh
+undefined
+
+
+> console.log("Saurabh", 8-2)
+Saurabh 6
+undefined
+>
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+**** To run a JS file in node*****
+
+PS C:\Users\saura\Desktop\Kode Mafia> cd '.\7. BACKEND\'     
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND> cd '.\Node JS\'   
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS> dir
+
+
+    Directory: C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        08-07-2024  12:52 AM                Lecture-32
+
+
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS> cd .\Lecture-32\
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> dir
+
+
+    Directory: C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        08-07-2024  12:52 AM              0 app.js
+-a----        08-07-2024  12:52 AM           1536 raamji.txt
+
+
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> node app.js      
+Hare Krishna hare krishna
+Hare Rama hare rama
+
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> node .\app.js
+Hare Krishna hare krishna
+Hare Rama hare rama
+
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> cd ..
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS> cd .\Lecture-32\
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> dir
+
+
+    Directory: C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        08-07-2024  12:57 AM             76 app.js
+-a----        08-07-2024  12:52 AM           1536 raamji.txt
+
+
+PS C:\Users\saura\Desktop\Kode Mafia\7. BACKEND\Node JS\Lecture-32> node app.js
+Hare Krishna hare krishna
+Hare Rama hare rama
