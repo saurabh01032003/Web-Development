@@ -1,0 +1,16 @@
+{
+  "name": "figlet",
+  "version": "1.0.0",
+  "description": "initialised npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurabh Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "figlet": "^1.7.0"
+  }
+}
