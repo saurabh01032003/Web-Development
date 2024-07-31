@@ -16,11 +16,11 @@ app.get('/',(req,res) =>{
 
 
 // GET request ko handle kar raha
-// app.get('/user',(req,res)=>{
-//     let {keyNameBind,keyAgeBind} = req.query; // destructure
-//     console.log(`Name : ${keyNameBind}  Age : ${keyAgeBind}`);
-//     res.send("GET request sent successfully");
-// })
+app.get('/user',(req,res)=>{
+    let {keyNameBind,keyAgeBind} = req.query; // destructure
+    console.log(`Name : ${keyNameBind}  Age : ${keyAgeBind}`);
+    res.send("GET request sent successfully");
+})
 
 // POST request handle kr rha
 app.post('/user',(req,res)=>{
