@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <h1>Displaying List of all blogs</h1>
+
+    <section>
+        <% for(let item of comments){ %>
+            <div>
+                <h3> id is : <%= item.id %></h3>
+                <h3> username is : <%= item.username %></h3>
+                <h3> comment is : <%= item.comment %></h3>
+                <a href="blogs/<%= item.id %>">Show item</a>
+                <br>
+                <a href="/blogs/<%= item.id %>/edit">Edit</a> 
+                <br>
+                <form action="/blogs/<%=item.id%>?_method=DELETE" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        <% } %>
+    </section>
+</body>
+</html>
