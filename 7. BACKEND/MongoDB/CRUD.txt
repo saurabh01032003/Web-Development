@@ -1,0 +1,357 @@
+
+/*************************Run these commands on Command-Prompt*****************************\
+
+
+
+
+
+Microsoft Windows [Version 10.0.22631.3958]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\saura>mongosh  // Starting mongo-shell
+Current Mongosh Log ID: 66aee0dd4e58698815228fb4
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.15
+Using MongoDB:          7.0.12
+Using Mongosh:          2.2.15
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-08-03T08:16:08.906+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+admin   40.00 KiB
+config  72.00 KiB
+local   40.00 KiB
+
+//***** Create a db naruto(because pahle se exist nahi kar rha tha)
+test> use naruto
+switched to db naruto
+
+
+naruto> db.movies.insertOne({name:"Spider-man",imdb : 7.2})
+{
+  acknowledged: true,
+  insertedId: ObjectId('66aef3f04e58698815228fb5')
+}
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  }
+]
+
+
+naruto> db.movies.find()
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  }
+]
+
+
+naruto> db.movies.insertMany([ {name: "Kriss",imdb : 6.2},{name: "Saktiman",imdb:6.9},{name:"Flying-Jatt",imdb:6.2} ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('66aef47d4e58698815228fb6'),
+    '1': ObjectId('66aef47d4e58698815228fb7'),
+    '2': ObjectId('66aef47d4e58698815228fb8')
+  }
+}
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Kriss',
+    imdb: 6.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb7'),
+    name: 'Saktiman',
+    imdb: 6.9
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.find({imdb:6.2})
+[
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Kriss',
+    imdb: 6.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.find({name:"Kriss",imdb:6.2})
+[
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Kriss',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.updateOne({imdb:6.2},{$set : {imdb:7,name:"Ra-one"} })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Ra-one',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb7'),
+    name: 'Saktiman',
+    imdb: 6.9
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.updateOne({imdb:6.9},{$set : {imdb:7}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Ra-one',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb7'),
+    name: 'Saktiman',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.updateMany({imdb:7},{$set: {name:"Mr.Beast"} })
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef3f04e58698815228fb5'),
+    name: 'Spider-man',
+    imdb: 7.2
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Mr.Beast',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb7'),
+    name: 'Mr.Beast',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> show dbs
+admin   40.00 KiB
+config  96.00 KiB
+local   40.00 KiB
+naruto  72.00 KiB
+
+
+naruto> show collections
+movies
+
+
+naruto> db.movies.deleteOne({name:"Spider-man"})
+{ acknowledged: true, deletedCount: 1 }
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef47d4e58698815228fb6'),
+    name: 'Mr.Beast',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb7'),
+    name: 'Mr.Beast',
+    imdb: 7
+  },
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+
+naruto> db.movies.deleteMany({name:'Mr.Beast'})
+{ acknowledged: true, deletedCount: 2 }
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+naruto> db.movies.insertMany([ {name: "Kriss",imdb : 6.2},{name: "Saktiman",imdb:6.9},{name:"Flying-Jatt",imdb:6.2} ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('66aef7d24e58698815228fb9'),
+    '1': ObjectId('66aef7d24e58698815228fba'),
+    '2': ObjectId('66aef7d24e58698815228fbb')
+  }
+}
+
+
+
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef47d4e58698815228fb8'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  },
+  {
+    _id: ObjectId('66aef7d24e58698815228fb9'),
+    name: 'Kriss',
+    imdb: 6.2
+  },
+  {
+    _id: ObjectId('66aef7d24e58698815228fba'),
+    name: 'Saktiman',
+    imdb: 6.9
+  },
+  {
+    _id: ObjectId('66aef7d24e58698815228fbb'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+
+naruto> db.movies.deleteOne({})
+{ acknowledged: true, deletedCount: 1 }
+naruto> db.movies.find({})
+[
+  {
+    _id: ObjectId('66aef7d24e58698815228fb9'),
+    name: 'Kriss',
+    imdb: 6.2
+  },
+  {
+    _id: ObjectId('66aef7d24e58698815228fba'),
+    name: 'Saktiman',
+    imdb: 6.9
+  },
+  {
+    _id: ObjectId('66aef7d24e58698815228fbb'),
+    name: 'Flying-Jatt',
+    imdb: 6.2
+  }
+]
+
+
+
+naruto> db.movies.deleteMany({})
+{ acknowledged: true, deletedCount: 3 }
+
+
+naruto> db.movies.find({})
+
+naruto> show dbs
+admin   40.00 KiB
+config  96.00 KiB
+local   40.00 KiB
+naruto  72.00 KiB
+
+
+
+naruto> db.movies.drop()
+true
+
+naruto> show collections
+
+naruto>
