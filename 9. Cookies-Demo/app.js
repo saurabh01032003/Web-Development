@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
     res.send(req.signedCookies); // only signed cookies
 })
 
-// ------Signed cookies
+// // ------Signed cookies
 app.get('/getsignedCookies',(req,res)=>{
     res.cookie('bank-balance','250 crore', {signed:true}); // this cookies will not seen in application part after inspecting
     res.send('cookies sent successfully');
@@ -22,7 +22,7 @@ app.get('/getsignedCookies',(req,res)=>{
 
 // ----------------For any cookie
 
-// // Pahle cookie set karenge : baad me get 
+// Pahle cookie set karenge : baad me get 
 // app.get('/setcookie',(req,res)=>{
 //     // cookie ki key value pair server(res) vejega-> wo client side(req) pr store hoga
 //     res.cookie('name','Saurabh');
