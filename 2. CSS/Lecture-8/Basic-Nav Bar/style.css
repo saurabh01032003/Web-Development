@@ -5,7 +5,8 @@
 }
 
 nav {
-    /* height: 100px; */
+    /* min-height isliye diya kyonki hight fix-kardene(mtlb height : 767px❌) pr bahar aa ja rhe the baki sare item (while doing flex-direction:column below 767px width) */
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,11 +22,11 @@ div{
 
 div:nth-of-type(2)
 {
-    width: 40vw;
+    width: 20vw;
 }
 
 button{
-    font-size: 20px;
+    font-size: 40px;
     color: black;
 }
 
@@ -40,7 +41,7 @@ div:nth-of-type(2) > ul{
 
 @media screen and (max-width:767px)
 {
-    nav,div:nth-of-type(2) > ul{
+    nav,button,div:nth-of-type(2) > ul{
         flex-direction: column;
     }
     div:nth-of-type(2)>ul{
