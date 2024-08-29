@@ -1,0 +1,36 @@
+.image{
+    width: 80vw;
+    height: 300vh;
+    margin:20px auto;
+    border: 5px solid black;
+
+    /* background image ke liye */
+    /* url ko string me dalo y */
+    background-image: url(https://plus.unsplash.com/premium_photo-1668383778556-0efac06c34af?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8);
+
+    /* Baar baar image repeat nahi hoga */
+    /* no-repeat, repeat-x(only repeat along x-axis),space(pure space me repeat karega) */
+    background-repeat: no-repeat;
+
+    /* jaha initially present thi whi rahegi image */
+    background-position: initial;
+
+    /* center me aa jayegi image */
+    background-position: center;
+
+    /* center ke line me right side */
+    background-position: right; 
+    /* center ke line me left side */
+    background-position: left; 
+
+    /* background-size ka pahla part : width and dusra part: height batata hai */
+    /* background-size: 80% 10%; */
+
+    /* This will display original size of image */
+    background-size: contain; 
+
+    /* in order to be fit in our container(div in our case) image fatt jayegi */
+    background-size: cover;
+    
+}
+
