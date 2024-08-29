@@ -13,21 +13,21 @@
     background-repeat: no-repeat;
 
     /* jaha initially present thi whi rahegi image */
-    background-position: initial;
+    /* background-position: initial; */
 
     /* center me aa jayegi image */
-    background-position: center;
+    /* background-position: center; */
 
     /* center ke line me right side */
-    background-position: right; 
+    /* background-position: right;  */
     /* center ke line me left side */
-    background-position: left; 
+    /* background-position: left;  */
 
     /* background-size ka pahla part : width and dusra part: height batata hai */
     /* background-size: 80% 10%; */
 
     /* This will display original size of image */
-    background-size: contain; 
+    /* background-size: contain;  */
 
     /* in order to be fit in our container(div in our case) image fatt jayegi */
     background-size: cover;

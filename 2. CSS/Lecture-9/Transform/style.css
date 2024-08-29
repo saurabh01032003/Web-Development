@@ -1,7 +1,7 @@
 div{
     height: 100px;
     width: 100px;
-    background-color: red;
+    background-color:green;
     border: 2px solid black;
     transition-duration: 3s;
     margin: 100px auto;
@@ -10,25 +10,27 @@ div{
 div:hover{
 
     /* Two properties don't applied simultaneously -> Override */
-    /* transform: translateX(100px);*/
-    /* transform: translateY(100px);  */
+    transform: translateX(100px);
+    transform: translateY(100px); 
 
-    /* both directionme */
+    /* both direction me i.e vector addition rule wale direction me (i.e diagonally) */
+    transform: translate(100px, 100px);
 
-    /* transform: translate(100px, 100px); */
-
-    /* transform: rotateX(60deg);
-    transform: rotateY(90deg);
+    transform: rotateY(60deg);
+    /* transform: rotateY(90deg);
     transform: rotateZ(90deg); */
 
     /* enlarge-x */
-    /* transform: scaleX(2);  */
+    transform: scaleX(2); 
 
     /* enlarge-y */
     /* transform: scaleY(1.2); */
 
+    /* x me 2-times and y me 6 times */
+    transform: scale(2,6); 
+
 
     /* skew */
-    /* transform: skewY(30deg); */
+    transform: skewY(30deg);
     transform: skewX(30deg);
 }
