@@ -4,32 +4,52 @@
     box-sizing: border-box;
 }
 
-/* .row{
+.row{
     width: 100px;
     height: 100px;
     border: 2px solid black;
     background-color: aqua;
-    margin: 10px 30px; */
-    /* transition-property: background-color; */
-    /* transition-property: background-color,border-radius;
-    transition-duration: 2s;
-} */
+    margin: 10px 30px; 
+    
+    /* tranform-property mtlb: transformation property kis kis pr lagana chahte ho */
 
-/* .row:hover{
+    /* here we are applying transform property only for background-color */
+    /* transition-property: background-color;  */
+
+    /* here we are applying transform property for background-color and border-radius, by default it is applied to all property inside (.row) here */
+    /* transition-property: background-color,border-radius; */
+    /* transition-duration: 2s; */
+}
+
+.row:hover{
     background-color: blue;
     border-radius: 50%;
-} */
 
+    /* We can write those property here as well */
+    /* ---------------------------------------- */
+    /* tranform-property mtlb: transformation property kis kis pr lagana chahte ho */
+
+    /* here we are applying transform property only for background-color */
+    /* transition-property: background-color;  */
+
+    /* here we are applying transform property for background-color and border-radius, by default it is applied to all property inside (.row) here */
+    /* transition-property: background-color,border-radius; */
+    /* transition-duration: 2s; */
+}
+
+/* ----------------------------------------------- */
 #parent{
     background-color: lightblue;
 }
 
-div{
+.child{
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    transition-duration: 2s;
-    /* transition-delay: 3s; */
+    transition-duration: 4s;
+
+    /* It means 4sec ke gap ke baad transition start hogi */
+    /* transition-delay: 4s; */
 }
 
 
@@ -41,7 +61,7 @@ div{
 
 .child-2{
     background-color: green;
-    /* pahle slow baad me dhire */
+    /* pahle slow baad me fast */
     transition-timing-function: ease-in;
 }
 
