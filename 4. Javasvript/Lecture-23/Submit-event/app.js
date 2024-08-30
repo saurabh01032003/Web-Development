@@ -1,4 +1,5 @@
 let formEle = document.querySelector("form");
+let section = document.querySelector('section');
 
 formEle.addEventListener("submit", function (event) {
     // submit event ki info 'e' object me hai && submit event form ke upar apply ho raha isliye target elemetnt formELe(i.e form hai)
@@ -26,6 +27,13 @@ formEle.addEventListener("submit", function (event) {
     // console.log(event.target.elements[0].value);
     // console.log(formEle.elements[0].value); // same as above
 
-    
+
+
+    // section.appendChild(event.target.element[0].value);
+    let h1 = document.createElement('h1');
+    h1.innerHTML = event.target.elements[0].value;
+
+    section.appendChild(h1);
+  
     console.log(event.target.elements[1].value);
 });
