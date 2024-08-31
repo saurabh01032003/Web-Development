@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: palegreen;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    margin-left: 50px;
+}
+
+li i{
+    margin-right: 10px;
+}
+
+nav a{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#heading{
+    margin: 10px auto;
+    width: 80vw;
+    background-color: palegoldenrod;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#heading h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.6rem;
+    color: purple;
+}
+
+#heading p{
+    font-family: 2rem;
+    text-align: center;
+}
+
+#container{
+    width: 80vw;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 200px; */
+    gap: 20px;
+    background-color: yellow;
+}
+
+div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px auto; 
+}
+
+div{
+    position: relative;
+}
+
+div i{
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    /* mark initial size as 0 */
+    transform: scale(0);
+    transition-duration: 2s;
+    color:aliceblue
+}
+
+div img:hover{
+    opacity: 0.4;
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+div:hover i{
+    transform: scale(1.5);
+}
