@@ -105,13 +105,12 @@ let child = document.querySelector('#child')
 // -----------------------
 
 
-grandParent.addEventListener('click' , function(){
-    console.log("grand-parent")
-} , true)
-parent.addEventListener('click' , function(e){
-    e.stopPropagation();
-    console.log("parent")
-} , true)
-child.addEventListener('click' , function(){
-    console.log("child")
-})
+// grandParent.addEventListener('click' , function(){
+//     console.log("grand-parent")
+// } , true)
+// parent.addEventListener('click' , function(){
+//     console.log("parent")
+// } , true)
+// child.addEventListener('click' , function(){
+//     console.log("child")
+// },true);
